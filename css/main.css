@@ -2,7 +2,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 96px;
+    gap: 72px;
     flex-direction: column;
 
     height: 100vh;
@@ -13,7 +13,14 @@ body{
 .container{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 0px;
+}
+
+.logo{
+    height:16px;
+    width: 96px;
 }
 
 .link-btn {
