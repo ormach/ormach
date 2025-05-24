@@ -45,8 +45,8 @@ body{
 }
 
 .logo{
-    height:16px;
-    width: 96px;
+    height: min-content;
+    width: min-content;
 }
 
 .link-btn {
