@@ -2,5 +2,28 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 96px;
+    flex-direction: column;
+
     height: 100vh;
+
+    font-family: "JetBrains Mono", sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.link-btn {
+    height: 52px;
+    width: 240px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link-btn:hover {
+    background-color: rgba(0,0,0,0.04);
 }
