@@ -64,6 +64,13 @@ body{
 .link-btn:hover {
     background-color: rgba(0,60,255,0.05);
 }
+.tba{
+    color: rgba(0,0,0,0.5);
+
+}
+.tba:hover {
+    background-color: white;
+}
 
 .label {
     padding-left: 16px;
