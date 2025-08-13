@@ -7,7 +7,8 @@ html{
     --dark-bg: rgba(0,0,0,0.5);
     --border: 12px;
     --bg:#1D1D1D;
-    --key: #FFAC4F;
+    /* --key: #FFAC4F; */
+    --key: #ffffff;
 
     background-color: var(--bg);
     position: relative;
