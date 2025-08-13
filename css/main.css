@@ -125,18 +125,7 @@ li::marker {
 }
 
 
-.example{
-    color: var(--blue);
-    font-style: italic;
-    background-color: var(--b03);
-    padding: 12px;
-    margin: 12px 0;
-    height: fit-content;
 
-    span{
-        font-weight: 600;
-    }
-}
 
 
 summary{

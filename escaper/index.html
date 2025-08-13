@@ -14,7 +14,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>escaper rpg</title>
+    <title>Escaper RPG</title>
 
     <!-- Share link preview -->
     <meta property="og:title" content="escaper" />
@@ -31,7 +31,7 @@
 
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/main.css">
-     <link rel="stylesheet" href="../css/escaper.css">
+    <link rel="stylesheet" href="../css/escaper.css">
 
     <!--    Mono-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -137,14 +137,18 @@
 
                 <span>PL:</span> Later tries to throw a boulder at a druid. Rolls d20 and adds +3 from Strength.<br>
             </p>
+        </section>
 
-            <br>
+        <!-- trait passives -->
+        <section>
+            <h3>TRAIT PASSIVES</h3>
             <p>
-                Player can unlock a random passive trait bonus by paying 5 trait points. Passive trait bonus will provide effect related to the trait.
+                Player can pay 5 trait points to unlock a random trait passive that will permanently provide a powerful passive effect to the character.
             </p>
 
             <p class="example">
-                <span>Crafting Master:</span> 25% chance to recover one crafting ingredient.
+                <span>Chains of Ash II:</span> During the night lesser undead obey your orders.<br>
+                <span>Arcane Bastion:</span> Get no damage bonus from power. Swap power and defense.
             </p>
         </section>
 
@@ -152,27 +156,17 @@
         <section>
             <h3>STATES</h3>
             <p>
-                Character can get any kind of states in the world based on their actions and conditions. If for example character works a lot without any rest, the character will gain "Tired" state that may negatively affect their rolls.
-                
+                States represent effects that affect character due to environment or their actions. For example working a lot, or getting poisoned will apply a state that will apply a particular condition to the character.
             </p>
-            <br>
-            <p>
-                Some negative states can be removed via resting, eating etc. States progress over time if not removed causing more severe negative effects.
-            </p>
+
             <div class="example">
-                <span>Tired x1:</span> Reduce your die roll values per each "Tired" stack.<br>
-                <span>Silence:</span> Can’t cast spells or use magic scrolls.<br>
-                <span>Stun:</span> Can’t act.
+                <span>Drunk:</span> Traits values are inverted.<br>
+                <span>Brain damage:</span> Can't use words longer than 5 characters.<br>
             </div>
 
-            <br>
-
             <p>
-                Player may get temporary buffs or magic effects during the game. All effects of that type (magic buffs, consumable buffs, story related buffs) are removed at the end of the combat.
+                Temporary gains of power or defense from items, skills, or consumables are also considered a state, such effects are lost at the end of the any combat.
             </p>
-            <div class="example">
-                If you gained 5 power during combat, when the combat will end, gained power is lost.
-            </div>
         </section>
 
         <!-- Actions -->
@@ -183,8 +177,12 @@
         </p>
 
         <ul>
-            <li>Predefined actions — Actions provided by items, skills learned by character, or trait passives.</li>
-            <li>Improvised actions — Free form action performed by player describing what their character does in the game world. If required, GM will evaluate the success threshold, and player will roll d20 to determine the outcome.
+            <li>
+                Predefined actions — Actions provided by items, skills learned by character, or trait passives.
+            </li>
+            <li>
+                Improvised actions — Free form action performed by player describing what their character does in the game world. If required, GM will evaluate the success threshold, and player will roll d20 to determine the outcome.
+
                 <div class="example">
                     <span>Game master:</span> You are ambushed by a demon.
                     
@@ -250,7 +248,7 @@
                 Spirit can be used to reanimate an undead, mech etc. Player in control of a spirit gains control over the reanimated character. Reanimated characters have special passives.
             </p>
             <div class="example">
-                Undead: -1 to everything.
+                Lesser undead: -1 to everything.
             </div>
         </section>
 
