@@ -42,7 +42,7 @@ body{
     align-items: center;
     gap: 72px;
     flex-direction: column;
-    height: calc(100vh);
+    /* height: calc(100vh); */
     min-height: min-content;
 
     padding: 96px 24px;
