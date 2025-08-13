@@ -21,13 +21,13 @@ html{
     -moz-osx-font-smoothing: grayscale;      /* Firefox (macOS) */
     text-rendering: optimizeLegibility;      /* Better kerning/ligatures */
 
-    
+    overflow-x: hidden;   
 }
 body{
     display: flex; 
     flex-direction: column;
     justify-content: center; 
-    align-items: center;     
+    align-items: center;   
 }
 
 .overflow{
@@ -304,7 +304,7 @@ button.x:hover{
         height: 254px;
 
         left: 50%;
-        transform: translateX(-50%);
+ 
     }
     #heading{
         height: 194px;  
@@ -326,7 +326,6 @@ button.x:hover{
     }
     #hero-img{
         /* width: 100%;
-        width: 1200px;
         height: 800px; */
     
         position: absolute;
