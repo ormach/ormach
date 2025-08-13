@@ -1,0 +1,12 @@
+<svg width="92" height="28" viewBox="0 0 92 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M28 0V8H36V4H40V0H44V12H40V8H36V12H24V0H28Z" fill="white"/>
+<path d="M0 16H20V20H12V28H8V20H0V16Z" fill="white"/>
+<path d="M20 0H4V4H8V12H12V4H16V12H20V4V0Z" fill="white"/>
+<rect width="4" height="8" transform="matrix(-1 0 0 1 4 4)" fill="white"/>
+<path d="M20 0V12H16V4H12V12H8V4H4V12H0V4H4V0H20Z" fill="white"/>
+<path d="M48 28V16H52V24H56V16H60V24H64V16H68V24H64V28H48Z" fill="white"/>
+<path d="M44 15V23H40V19H28V23H40V27H24V19H28V15H44Z" fill="white"/>
+<path d="M68 0V8H64V4H52V8H64V12H48V4H52V0H68Z" fill="white"/>
+<path d="M80 4H76V12H72V0H80V4ZM92 12H84V8H88V0H92V12ZM84 8H80V4H84V8Z" fill="white"/>
+<path d="M80 20H76V28H72V16H80V20ZM92 28H84V24H88V16H92V28ZM84 24H80V20H84V24Z" fill="white"/>
+</svg>
