@@ -59,39 +59,55 @@
 
         <!-- Character -->
         <section>
-            <h3>Character</h3>
-            <p>Your character is defined by it's RP, traits, stats and items. There are no predefined classes, you gain a class as you play by doing particular activities (like in Oblivion).</p>
-        </section>
+            <h3>Character & stats</h3>
+            <p>
+                Your character is defined by it's RP, traits, stats and items. There are no predefined classes, you gain a class as you play by doing particular activities (like in Oblivion). Characters have four base stats listed below:
+            </p>
 
-        <!-- Stats -->
-        <section>
-            <h3>Stats</h3>
+            <br><br>
+        
+            <div style="display: flex;">
+                <img src="../img/escaper/life.svg">
+               <p class="bold" style="margin: 1px 0 0 4px;">Life</p>
+            </div>
+            <ul>
+                <li>When character reached 0 life, it dies.</li>
+            </ul>
+        
+            <br>
 
-            
-                <p>❤️ Life</p>
-                <ul>
-                    <li>When character reached 0 life, it dies.</li>
-                </ul>
-            
-                <p>⚡ Power</p>
-                <ul>
-                    <li>Added to damage value of the damage related actions.</li>
-                    <li>Used as a resource to perform complex actions like spells or crafting.</li>
-                </ul>
-            
-                <p>🛡️ Defense</p>
-                <ul>
-                    <li>Reduces incoming damage by 1 per point of defense.</li>
-                    <li>Negative defense increases incoming damage.</li>
-                    <li>Character looses 1 defense after being hit.</li>
-                </ul>
-            
-                <p>📦 Inventory & equipment slots</p>
-                <ul>
-                    <li>Determines the number of items character can carry.</li>
-                    <li>Equipment are items character can use during combat.</li>
-                    <li>Inventory represents items in the backpack (not accessible during combat).</li>
-                </ul>            
+            <div style="display: flex;">
+                <img src="../img/escaper/power.svg">
+                <p class="bold" style="margin: 1px 0 0 4px;">Power</p>
+            </div>
+            <ul>
+                <li>Each point increases character damage from all sources by 1.</li>
+                <li>Resource used to perform complex actions like spells or crafting.</li>
+            </ul>
+        
+            <br>
+
+            <div style="display: flex;">
+                <img src="../img/escaper/def.svg">
+                <p class="bold" style="margin: 1px 0 0 4px;">Defense</p>
+            </div>
+            <ul>
+                <li>Reduces incoming damage by 1 per point of defense.</li>
+                <li>Negative defense increases incoming damage.</li>
+                <li>Character looses 1 defense after being hit.</li>
+            </ul>
+        
+            <br>
+
+            <div style="display: flex;">
+                <img src="../img/escaper/slots.svg">
+                <p class="bold" style="margin: 1px 0 0 4px;">Inventory & equipment slots</p>
+            </div>
+            <ul>
+                <li>Determines the number of items character can carry.</li>
+                <li>Equipment are items character can use during combat.</li>
+                <li>Inventory represents items in the backpack (not accessible during combat).</li>
+            </ul>            
         </section>
 
         <!-- Traits -->
@@ -101,16 +117,17 @@
                 Characters gain traits based on what they do in the game. 
             </p>
             <p class="example">
-                PC: Attempts to sneak behind a guard, rolls action dice and succeeds.<br>
-                GM: Grants PC a permanent +1 stealth trait.
+                <span>Player:</span> Attempts to sneak behind a guard, rolls action dice and succeeds.<br>
+                <span>Game Master:</span> Grants PC a permanent +1 stealth trait.
             </p>
 
+            <br>
             <p>
                 Player can unlock a random passive trait bonus by paying 5 trait points. Passive trait bonus will provide effect related to the trait.
             </p>
 
             <p class="example">
-                Crafting Master: 25% chance to recover one crafting ingredient.
+                <span>Crafting Master:</span> 25% chance to recover one crafting ingredient.
             </p>
         </section>
 
@@ -120,15 +137,19 @@
             <p>
                 Character can get any kind of states in the world based on their actions and conditions. If for example character works a lot without any rest, the character will gain "Tired" state that may negatively affect their rolls.
                 
-                <br><br>
-                
+            </p>
+            <br>
+            <p>
                 Some negative states can be removed via resting, eating etc. States progress over time if not removed causing more severe negative effects.
             </p>
             <div class="example">
-                Tired x1: Reduce your die roll values per each "Tired" stack.<br>
-                Silence: Can’t cast spells or use magic scrolls.<br>
-                Stun: Can’t act.
+                <span>Tired x1:</span> Reduce your die roll values per each "Tired" stack.<br>
+                <span>Silence:</span> Can’t cast spells or use magic scrolls.<br>
+                <span>Stun:</span> Can’t act.
             </div>
+
+            <br>
+
             <p>
                 Player may get temporary buffs or magic effects during the game. All effects of that type (magic buffs, consumable buffs, story related buffs) are removed at the end of the combat.
             </p>
@@ -141,39 +162,47 @@
         <section>
         <h3>Actions</h3>
         <p>
-            There are two types of action. Item actions and improvised action.
-            <br><br>
-
-            Item actions — provided by an item.
-
-            Improvised actions — role play actions.
-                //Require skill check
+            Actions are ways for players to act in the game world. There are two types of action. Item actions and improvised action.
         </p>
 
-        <h3>Improvised actions</h3>
-        <p>
-            Players can choose to perform a custom action that is not provided by items at any time if conditions are appropriate. To do so, player should describe what they are trying to do in detail, then GM will evaluate the success threshold and player will roll the dice that will determine the outcome.
-        </p>
-        <div class="example">
-            GM: You are ambushed by a demon.<br>
-            PC: Instead of attacking, I will use an improvised action, and will try to throw the grappling hook into the tower window and escape the attack.<br>
-            GM: Roll d20, you need 15 to succeed. Your agility trait value is added to this roll...<br>
-
-            In this example player chose to escape the encounter via improvised action.
-        </div>
-
-        <h3>Out of combat actions</h3>
-        <p>
-            Outcome of certain activities is determined by the die roll. Players roll d20 to determine if intended action was successful. Before the roll DM evaluates the action complexity and sets the success threshold.
-        </p>
-       
+        <ul>
+            <li>Predefined actions — Actions provided by items, skills learned by character, or trait passives.</li>
+            <li>Improvised actions — Free form action performed by player describing what their character does in the game world. If required, GM will evaluate the success threshold, and player will roll d20 to determine the outcome.
+                <div class="example">
+                    <span>Game master:</span> You are ambushed by a demon.
+                    
+                    <br><br>
+                    <span>Player:</span> Instead of attacking, I will use an improvised action, and will try to throw the grappling hook into the tower window and escape the attack.
+                    
+                    <br><br>
+                    <span>Game master:</span> Roll d20, you need 15 to succeed. Your agility trait value is added to this roll...
+                    
+                    <br><br>
+                    In this example player chose to escape the encounter via improvised action.
+                </div>
+            </li>
+        </ul>
         </section>
 
         <!-- Items -->
         <section>
         <h3>Items</h3>
         <p>
-            TBA
+            Items can be carried by players to gain extra abilities in the game world. Here are the most common item types:
+            <ul>
+                <li>Combat items — Weapons, off-hands that provide actions intended to be used during combat.</li>
+                <p class="example">
+                    <span>Long bow:</span> Attack for 2d6 damage.
+                </p>
+                <li>Equipment — Items that provide passive effects when equipped.</li>
+                <p class="example">
+                    <span>Plate armor:</span> Cap incoming damage at 5. Stealth trait: -4.
+                </p>
+                <li>Consumables — Items that you consume to perform a specific action at any stage of the game. On use the item is destroyed.</li>
+                <p class="example">
+                    <span>Coffee leafs x1:</span> Increase your next die roll by d8 (extra action).
+                </p>
+            </ul>
         </p>
         </section>
 
@@ -181,7 +210,13 @@
         <section>
         <h3>Combat</h3>
         <p>
-            TBA
+            Combat in Escaper aims to be quick and meaningful. Here are the key aspects of the system: 
+            
+            <ul>
+                <li>Quick — No more than 1-2 turns per encounter, if during that time none of the parties won, enemy will try to escape.</li>
+                <li>Synchronous turn-based — Opposing party actions are resolved simultaneously to reduce the number of posts per encounter. During their turns characters can perform one main action (predefined or improvised), and multiple extra actions (mainly provided by consumable items).</li>
+                <li>Reactive — Game master lists enemy intent at the start of each combat turn, players have to respond to enemies with their actions.</li>
+            </ul>
         </p>
         </section>
 
@@ -205,8 +240,13 @@
 
 
         <!-- Links -->
-        <section>
-            <p class="">If you have questions, send me a note:</p>
+        <section style="transform: translateX(-16px);">
+            <p class="label">
+                If you have any questions,<br>
+                feel free to send them via:
+            </p>
+            
+            <br>
             <a class="link-btn" target="_blank" href="https://www.reddit.com/user/ormach/">
                 <img src="../img/ico/id=reddit,%20variant=3.svg" alt="">
                 Reddit: u/ormach
