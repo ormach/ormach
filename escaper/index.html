@@ -31,6 +31,7 @@
 
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/main.css">
+     <link rel="stylesheet" href="../css/escaper.css">
 
     <!--    Mono-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -60,79 +61,81 @@
             <div class="gap"></div>
 
             <p class="description">
-                Experimental rules-light d20 RPG system,<br>
-                designed specifically for play-by-post.
+                Experimental RPG micro-system for play-by-post.<br>
+                System reference for new players:
             </p>
 
         </section>
 
 
 
-        <!-- Character -->
-        <section>
-            <h3>Character & stats</h3>
-            <p>
-                There are no classes, characters are defined by backstory, RP, traits, items, and four base stats. This allows players to create their own class during the game by acting in a certain way and acquiring traits.
-            </p>
+        <!-- Stats -->
+        <section class="stats">
 
-            <div class="gap"></div>
-
-            <div style="display: flex;">
+            <!-- Life -->
+            <h3>STATS</h3>
+            <div>
                 <img src="../img/escaper/life.svg">
-                <p class="bold" style="margin: 1px 0 0 4px;">
-                    Life
-                </p>
+                <p>Life</p>
             </div>
             <ul>
-                <li>When character reached 0 life, it dies.</li>
+                <li>Character dies upon reaching 0 life.</li>
             </ul>
-        
-            <br>
 
-            <div style="display: flex;">
+            <!-- Power -->
+            <div>
                 <img src="../img/escaper/power.svg">
-                <p class="bold" style="margin: 1px 0 0 4px;">
-                    Power
-                </p>
+                <p>Power</p>
             </div>
             <ul>
-                <li>Character deals 1 more damage per power with damaging actions.</li>
-                <li>Resource used to perform complex actions like spells or crafting.</li>
+                <li>Each point provides +1 damage.</li>
+                <li>Consumed for complex actions like mana for spells.</li>
             </ul>
-        
-            <br>
 
-            <div style="display: flex;">
+            <!-- Defense -->
+            <div>
                 <img src="../img/escaper/def.svg">
-                <p class="bold" style="margin: 1px 0 0 4px;">Defense</p>
+                <p>Defense</p>
             </div>
             <ul>
-                <li>Reduces incoming damage by 1 per point of defense.</li>
+                <li>Each point reduces incoming damage by 1.</li>
                 <li>Negative defense increases incoming damage.</li>
                 <li>Character looses 1 defense after being hit.</li>
             </ul>
-        
-            <br>
 
-            <div style="display: flex;">
+            <!-- Inventory -->
+            <div>
                 <img src="../img/escaper/slots.svg">
-                <p class="bold" style="margin: 1px 0 0 4px;">Inventory & equipment slots</p>
+                <p>Item slots</p>
             </div>
             <ul>
-                <li>Equipment slots are for items with passives (armor sets, capes, boots...), and items that provide actions you want to use during combat (weapons, consumables). </li>
-                <li>Inventory slots are for items in the backpack (not accessible during combat).</li>
+                <li>Character has 3 equipment, and 6 inventory slots.</li>
+                <li>Equipment slots — items placed here are considered equipped. They’re accessible in battle and provide passive effects at all times.</li>
+                <li>Inventory slots — items placed here are considered in backpack, and can't be used in combat unless equipped.</li>
             </ul>            
+        </section>
+
+        <!-- Classes -->
+        <section>
+        <h3>CLASSES</h3>
+            <p>
+                No preset classes. Character class is shaped by their traits gained based on how they act.
+            </p>
         </section>
 
         <!-- Traits -->
         <section>
-            <h3>Traits</h3>
+            <h3>TRAITS</h3>
             <p>
-                Characters gain traits based on what they do in the game. 
+                If character performs an action GM may provide that character a trait. Traits permanently increase skill check rolls for the related action group. 
             </p>
             <p class="example">
-                <span>Player:</span> Attempts to sneak behind a guard, rolls action dice and succeeds.<br>
-                <span>Game Master:</span> Grants PC a permanent +1 stealth trait.
+                <span>PL:</span> Attempts to lift a boulder.<br>
+                <span>GM:</span> Calls for a d20 skill check.<br>
+                <span>PL:</span> Rolls a 20, succeeds.<br>
+                <span>GM:</span> Awards "Strength: +3” trait.<br><br>
+
+                <span>PL:</span> Later tries to throw a boulder at a druid. Rolls d20 and adds +3 from Strength.<br>
             </p>
 
             <br>
@@ -147,7 +150,7 @@
 
         <!-- States -->
         <section>
-            <h3>States</h3>
+            <h3>STATES</h3>
             <p>
                 Character can get any kind of states in the world based on their actions and conditions. If for example character works a lot without any rest, the character will gain "Tired" state that may negatively affect their rolls.
                 
@@ -174,7 +177,7 @@
 
         <!-- Actions -->
         <section>
-        <h3>Actions</h3>
+        <h3>ACTIONS</h3>
         <p>
             Actions are ways for players to act in the game world. There are two types of action. Item actions and improvised action.
         </p>
@@ -200,7 +203,7 @@
 
         <!-- Items -->
         <section>
-        <h3>Items</h3>
+        <h3>ITEMS</h3>
         <p>
             Items can be carried by players to gain extra abilities in the game world. Here are the most common item types:
             <ul>
@@ -222,7 +225,7 @@
 
         <!-- Combat -->
         <section>
-        <h3>Combat</h3>
+        <h3>COMBAT</h3>
         <p>
             Combat in Escaper aims to be quick and meaningful. Here are the key aspects of the system: 
             
@@ -238,7 +241,7 @@
 
         <!-- Modules -->
         <section>
-            <h3>Spirits (Experimental)</h3>
+            <h3>SPIRITS (Experimental)</h3>
             <p>
                 When character dies it's soul leaves the body and stays with the party as a spirit that can communicate with others, can't interact with physical world. 
                 

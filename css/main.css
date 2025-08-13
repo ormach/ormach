@@ -124,10 +124,7 @@ li::marker {
     height: 48px;
 }
 
-h3 {
-    font-weight: 600;
-    margin-bottom: 12px;
-}
+
 .example{
     color: var(--blue);
     font-style: italic;

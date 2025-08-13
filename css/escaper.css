@@ -1,0 +1,20 @@
+h3 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+
+.stats p {
+    color: var(--blue);
+    margin: 1px 0 0 4px;
+    font-weight: 600;
+}
+
+.stats ul{
+    margin-bottom: 24px;
+}
+
+.stats div{
+    display: flex;
+}
