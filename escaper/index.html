@@ -133,11 +133,11 @@
                 <span>PL:</span> Rolls a 20, succeeds.<br>
                 <span>GM:</span> Awards "Strength: +3” trait.<br><br>
 
-                <span>PL:</span> Later tries to throw a boulder at a druid. Rolls d20 and adds +3 from Strength.<br>
+                <span>PL:</span> Later tries to throw a boulder at a druid. Rolls d20 and adds +3 from Strength.
             </p>
         </section>
 
-        <!-- trait passives -->
+        <!-- Trait passives -->
         <section>
             <h3>TRAIT PASSIVES</h3>
             <p>
@@ -145,8 +145,8 @@
             </p>
 
             <p class="example">
-                <span>Chains of Ash II:</span> During the night lesser undead obey your orders.<br>
-                <span>Arcane Bastion:</span> Get no damage bonus from power. Swap power and defense.
+                <span>Chains of Ash:</span> During the night lesser undead obey your orders.<br>
+                <span>Arcane Shield:</span> Get no damage bonus from power. Swap power and defense.
             </p>
         </section>
 
@@ -171,27 +171,26 @@
         <section>
         <h3>ACTIONS</h3>
         <p>
-            Actions are ways for players to act in the game world. There are two types of action. Item actions and improvised action.
+            Actions are ways for players to act in the game world. There are two types of actions:
         </p>
 
         <ul>
             <li>
-                Predefined actions — Actions provided by items, skills learned by character, or trait passives.
-            </li>
-            <li>
-                Improvised actions — Free form action performed by player describing what their character does in the game world. If required, GM will evaluate the success threshold, and player will roll d20 to determine the outcome.
+                Predefined — Actions provided by items, skills or trait passives.
 
                 <div class="example">
-                    <span>Game master:</span> You are ambushed by a demon.
-                    
-                    <br><br>
-                    <span>Player:</span> Instead of attacking, I will use an improvised action, and will try to throw the grappling hook into the tower window and escape the attack.
-                    
-                    <br><br>
-                    <span>Game master:</span> Roll d20, you need 15 to succeed. Your agility trait value is added to this roll...
-                    
-                    <br><br>
-                    In this example player chose to escape the encounter via improvised action.
+                    <span>GM:</span> You are attacked by orcs.<br>
+                    <span>PL:</span> I attack the closest orc with my sword.<br>
+                    <span>GM:</span> Roll d6 to determine the sword attack damage.
+                </div>
+            </li>
+            <li>
+                Improvised — Free form action performed by player via describing what their character does (RP actions). If improvised action is complex or unlikely GM may request to roll d20 to determine the outcome.
+
+                <div class="example">
+                    <span>GM:</span> You are attacked by orcs.<br>
+                    <span>PL:</span> I jump into the well to escape the combat.
+                    <span>GM:</span> Roll d20, you need more than 10 to succeed. Agility trait is added to this roll...
                 </div>
             </li>
         </ul>
@@ -201,18 +200,21 @@
         <section>
         <h3>ITEMS</h3>
         <p>
-            Items can be carried by players to gain extra abilities in the game world. Here are the most common item types:
+            Items provide predefined abilities and passives to character. Here are most common item types:
             <ul>
-                <li>Combat items — Weapons, off-hands that provide actions intended to be used during combat.</li>
+                <li>Weapons — provide combat related actions.</li>
                 <p class="example">
-                    <span>Long bow:</span> Attack for 2d6 damage.
+                    <span>Long bow:</span> Attack for d6 damage. Reduce power by 1 to repeat.<br>
+                    <span>Iron shield:</span> Reduce incoming dmg by 50%. All enemies target you.
                 </p>
-                <li>Equipment — Items that provide passive effects when equipped.</li>
+                <li>Equipment — provide passive effects when equipped.</li>
                 <p class="example">
-                    <span>Plate armor:</span> Cap incoming damage at 5. Stealth trait: -4.
+                    <span>Plate armor:</span> Cap incoming damage at 5. Stealth trait: -4.<br>
+                    <span>Purple cape:</span> Charisma trait: +4.
                 </p>
-                <li>Consumables — Items that you consume to perform a specific action at any stage of the game. On use the item is destroyed.</li>
+                <li>Consumables — provide an effect when consumed.</li>
                 <p class="example">
+                    <span>Bandages x1:</span> Recover 4 life and remove bleeding.<br>
                     <span>Coffee leafs x1:</span> Increase your next die roll by d8 (extra action).
                 </p>
             </ul>
@@ -223,12 +225,18 @@
         <section>
         <h3>COMBAT</h3>
         <p>
-            Combat in Escaper aims to be quick and meaningful. Here are the key aspects of the system: 
+            Combat aims to be quick and deadly.
             
             <ul>
-                <li>Quick — No more than 1-2 turns per encounter, if during that time none of the parties won, enemy will try to escape.</li>
-                <li>Synchronous turn-based — Opposing party actions are resolved simultaneously to reduce the number of posts per encounter. During their turns characters can perform one main action (predefined or improvised), and multiple extra actions (mainly provided by consumable items).</li>
-                <li>Reactive — Game master lists enemy intent at the start of each combat turn, players have to respond to enemies with their actions.</li>
+                <li>Fast paced — 3 turns per encounter. If combat lasts longer, enemies become enraged or retreat leaving players with no loot.</li>
+                <li>Reactive — Game master lists enemy intent at the start of each turn, players have to counter enemies with their actions.</li>
+                <li>Synchronous turns — Players and enemies turn actions are resolved simultaneously.</li>
+            </ul>
+
+            Notes:
+            <ul>
+                <li>Player can perform one main action (predefined or improvised), and multiple extra actions (mainly provided by consumable items) per turn.</li>
+                <li>Players can use an improvised action to change their equipment during combat.</li>
             </ul>
         </p>
         </section>
@@ -237,16 +245,18 @@
 
         <!-- Modules -->
         <section>
-            <h3>SPIRITS (Experimental)</h3>
+            <h3>SOULS (Experimental)</h3>
             <p>
-                When character dies it's soul leaves the body and stays with the party as a spirit that can communicate with others, can't interact with physical world. 
+                When character dies their soul leaves the body and remains with the party. Controlled by the player, it can communicate with others, can't interact with the physical world. 
                 
                 <br><br>
                 
-                Spirit can be used to reanimate an undead, mech etc. Player in control of a spirit gains control over the reanimated character. Reanimated characters have special passives.
+                Souls can be placed into an object to reanimate it (eg. undead, mech, golem etc.). Owner of the soul control the reanimated character. Reanimated characters have special passives.
             </p>
             <div class="example">
-                Lesser undead: -1 to everything.
+                <span>PL1:</span> Dies a horrible death.<br>
+                <span>PL2:</span> Uses magic to put players 1 soul into a dead frog.<br>
+                <span>PL1:</span> Reanimated as an undead frog.
             </div>
         </section>
 
@@ -255,8 +265,7 @@
         <!-- Links -->
         <section style="transform: translateX(-16px);">
             <p class="label">
-                If you have any questions,<br>
-                feel free to send them via:
+                Send your questions via:
             </p>
             
             <br>
