@@ -45,16 +45,91 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 </head>
+
 <body>
 
 <div class="wrapper">
-  <div class="container logo-container">
-    <a href="../">
-        <img class="logo" src="../img/ormach.svg" alt="" >
-    </a>
-    <p class="description">All links and social media. Follow for game project updates.</p>
+  <!-- NAVIGATION -->
+  <nav class="desktop-nav">
+      
+      <!-- Logo -->
+      <a href="./" class="logo-container">
+          <img class="logo" src="../img/orm-logo.svg" alt="" >
+      </a>
+      
+      
+      <!-- Buttons -->
+      <div class="link-container">
+          <a class="link-btn" href="../gallery">
+              <img src="../img/ico/black/repair.svg">
+              Gallery
+          </a>
+          <a class="link-btn" href="../about">
+              <img src="../img/ico/black/view.svg">
+              About
+          </a>
+          <a class="link-btn" target="_blank" href="https://discord.gg/AT8KdVbcVT"> 
+              <img src="../img/ico/black/discord.svg">
+              Discord
+          </a>
+          <a class="link-btn" target="_blank" href="https://ormach.itch.io/">
+              <img src="../img/ico/black/shop.svg">
+              Shop
+          </a>
+      </div>
+
+      <!-- <div style="height:200px;"></div> -->
+  </nav>
+
+  <nav class="mobile-nav">
+      <button onclick="toggleMenu()">
+
+          <div class="menu-btn" style="">
+              <img src="../img/ico/menu.svg">
+          </div>
+
+          <!-- Logo -->
+          <img class="logo" src="../img/orm-logo.svg" alt="" >
+      </button>
+  </nav>
+
+  <div id="menu-modal" class="hide">
+
+      <!-- Buttons -->
+      
+          <a class="link-btn" href="../gallery">
+              <img src="../img/ico/black/repair.svg">
+              Gallery
+          </a>
+          <a class="link-btn" href="../about">
+              <img src="../img/ico/black/view.svg">
+              About
+          </a>
+          <a class="link-btn" target="_blank" href="https://discord.gg/AT8KdVbcVT"> 
+              <img src="../img/ico/black/discord.svg">
+              Discord
+          </a>
+          <a class="link-btn" target="_blank" href="https://ormach.itch.io/">
+              <img src="../img/ico/black/shop.svg">
+              Shop
+          </a>
+
+          <nav class="mobile-nav">
+          <button onclick="toggleMenu()">
+
+              <div class="menu-btn">
+                  <img src="../img/ico/close.svg">
+              </div>
+  
+              <!-- Logo -->
+              <img class="logo" src="../img/orm-logo.svg" alt="" >
+          </button>
+  </nav>
+      
+
   </div>
 
+  <!-- CONTENT -->
   <div class="link-container">
     <a class="link-btn" target="_blank" href="https://www.reddit.com/user/ormach/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button">
       <img src="../img/ico/id=reddit,%20variant=3.svg" alt="">
