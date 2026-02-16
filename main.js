@@ -1,4 +1,4 @@
 function toggleMenu(){
     console.log(1);
-    document.getElementById("menu-modal").classList.toggle("hide")
+    document.getElementById("mobile-nav").classList.toggle("offset")
 }

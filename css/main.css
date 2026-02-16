@@ -8,12 +8,15 @@
     --rad1: 4px;
 
     --blue: #003CFF;
+    --pink: #FFACCD;
 
     --corner: 8px;
     --gap: 16px;
     --gap-sm:2px;
     --card: 320px;
     --nav-width: 160px;
+    --nav-height: 120px;
+    --modal-height: 560px;
 }
 
 /* body *{border: 1px solid rgba(255,0,0,0.3);} */
@@ -166,7 +169,7 @@ nav {
 
 
 .link-btn {
-    height: 52px;
+    height: 72px;
     width: 100%;
 
     border-radius: var(--rad1);
@@ -179,8 +182,10 @@ nav {
     text-decoration: none;
 
     color: black;
+
+    cursor: pointer;
 }
-.link-btn:hover {
+.link-btn:hover, #mobile-nav .nav-button:hover {
     background-color: rgba(0,60,255,0.05);
 }
 .tba{
@@ -340,7 +345,7 @@ li::marker {
 
 
 /* Tablet */
-.mobile-nav{
+#mobile-nav{
     display: none;
 
     position: fixed;
@@ -348,20 +353,25 @@ li::marker {
     bottom: 0px;
     top: auto;
 
-    height: min-content;
-    padding: 12px;
+    height: var(--modal-height);
+    width: 100vw;
     z-index: 10;
+
+    background-color: var(--pink);
+    padding: 0;
+
+    transform: translateY(calc(var(--modal-height) - var(--nav-height)));
+    transition: transform 0.5s ease-in-out 0.1s;
 }
-.mobile-nav button{
+.nav-button{
     background-color: rgba(0,0,0,0);
-    width: min-content;
-    padding: 0px;
+    height: var(--nav-height);
+    width: 100%;
+    padding: 0px 42px;
     margin: 0;
 
     display: flex;
-    gap: 2px;
-    flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
 
     cursor: pointer;
 }
@@ -369,15 +379,19 @@ li::marker {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black; 
+
     border-radius: 99px; 
-    width: 78px; 
+    width: 32px; 
     height: 78px;
+
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out 0.1s;
+
+    
 }
 
 #menu-modal{
-    /* display: none; */
-    background-color: white;
+    background-color: var(--pink);
     width: 100vw;
     height: 100vh;
 
@@ -394,12 +408,26 @@ li::marker {
 .hide{
     display: none !important;
 }
+.offset{
+    transform: translateY(0px) !important;
+    transition: transform 0.5s ease-in-out 0.1s;
 
-#menu-modal .link-btn{
-    padding-left: 140px;
-    height: 80px;
-    /* border: 1px solid pink; */
+    .menu-btn{
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out 0.1s;
+    }
+}
+
+
+.mobile-links .link-btn{
+    height: auto;
+    padding: 24px 24px 24px 52px;
     border-radius: 0;
+}
+
+.mobile-links .link-btn:nth-child(5){
+    height: auto;
+    padding: 24px 24px 52px 52px;
 }
 
 @media (max-width: 1120px) {
@@ -415,15 +443,24 @@ li::marker {
         display: none;
     }
 
-    .mobile-nav{
+    #mobile-nav{
         display: flex;
     }
 }
 
 /* Mobile */
 @media (max-width: 500px) {
+    body{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .logo-cell {
+        min-width: 272px;
+    }
+
     .content-area{
-        padding: 32px;
+        padding: 48px;
     }
     .img-frame {
         width: 100%;
