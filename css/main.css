@@ -378,7 +378,7 @@ li::marker {
     height: calc(var(--modal-height) + 12px);
     width: 100%;
     
-    padding: 0 20px 0 12px;
+    padding: 0 0 0 12px;
     margin: 0;
     
     display: flex;
@@ -393,8 +393,8 @@ li::marker {
     align-items: center;
 
     border-radius: 99px; 
-    width: 32px; 
-    height: 78px;
+    width: 52px; 
+    height: 48px;
 
     opacity: 1;
     transition: opacity 0.5s ease-in-out 0.1s;
