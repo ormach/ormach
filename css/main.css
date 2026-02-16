@@ -9,6 +9,7 @@
 
     --blue: #003CFF;
     --pink: #FFACCD;
+    --green: #79e698;
 
     --corner: 8px;
     --gap: 16px;
@@ -31,6 +32,9 @@ h2{
 }
 h3{
     padding-bottom: 12px;
+}
+a{
+    text-decoration: none;
 }
 
 /* LAYOUT */
@@ -441,33 +445,63 @@ li::marker {
 
 
 /* Project page */
+.project-line.dark{
+    color: white;
+    border-radius: var(--corner);
+}
 .project-line{
 
     display: flex;
-    gap: 12px
-    ;
+    flex-direction: column;
+    gap: 32px;
     width: 100%;
-    height: min-content;
+    height: fit-content;
     max-width: 800px;
     
+    justify-content: space-between;
     align-items: flex-start;
 
     border-bottom: 1px dashed var(--b20);
+    padding: 32px;
 
-
-    padding: 12px;
     a{
         text-decoration: none;
         color: var(--blue);
-    }
-    img{
-        width: 24px;
     }
     .content{
         display: flex;
         flex-direction: column;
     }
 }
+.round-btn{
+        display: flex;
+        align-items: center;
+
+        .ico{
+            padding: 16px;
+            display: flex;
+            border-radius: var(--corner);
+            height: min-content;
+             background-color: var(--pink);
+        }
+        .spacer{
+            width: 4px;
+            height: 8px;
+            background-color: var(--pink);
+        }
+        p{
+            color: black !important;
+            padding: 16px 20px;
+            background-color: var(--pink);
+            border-radius: var(--corner);
+        }
+    }
+    .round-btn:hover{
+        opacity: 0.9;
+    }
+    .green{
+        background-color: var(--green) !important;
+    }
 
 .content-area .project-line:first-child{
     border-top: 1px dashed var(--b20);
