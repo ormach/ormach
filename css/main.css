@@ -436,7 +436,7 @@ li::marker {
     }
 
     .content-area{
-        padding: 56px;
+        padding: 56px 56px calc(var(--nav-height) + 56px) 56px;
     }
 
     .desktop-nav{
