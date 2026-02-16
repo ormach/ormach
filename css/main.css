@@ -447,6 +447,10 @@ li::marker {
     #mobile-nav{
         display: flex;
     }
+
+    .logo-cell {
+        height: 152px;
+    }
 }
 
 /* Mobile */
@@ -461,8 +465,9 @@ li::marker {
     }
 
     .content-area{
-        padding: 48px;
+        padding: 48px 48px calc(var(--nav-height) + 48px) 48px;
     }
+
     .img-frame {
         width: 100%;
     }
