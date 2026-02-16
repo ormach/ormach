@@ -17,7 +17,7 @@
 
     --nav-width: 160px;
     --nav-height: 78px;
-    --modal-height: 480px;
+    --modal-height: 560px;
 }
 
 /* body *{border: 1px solid rgba(255,0,0,0.3);} */
@@ -25,6 +25,9 @@
 /* GENERIC */
 .bold {
     font-weight: 600;
+}
+h2{
+    font-weight: 800;
 }
 h3{
     padding-bottom: 12px;
@@ -399,7 +402,6 @@ li::marker {
     opacity: 1;
     transition: opacity 0.5s ease-in-out 0.1s;
 }
-
 #menu-modal{
     background-color: var(--pink);
     width: 100vw;
@@ -427,17 +429,48 @@ li::marker {
         transition: opacity 0.5s ease-in-out 0.1s;
     }
 }
-
-
 .mobile-links .link-btn{
     height: auto;
-    padding: 24px 24px 24px 44px;
+    padding: 24px 44px 24px 44px;
     border-radius: 0;
 }
-
-.mobile-links .link-btn:nth-child(5){
+.mobile-links .link-btn:last-child{
     height: auto;
     padding: 24px 24px 48px 44px;
+}
+
+
+/* Project page */
+.project-line{
+
+    display: flex;
+    gap: 12px
+    ;
+    width: 100%;
+    height: min-content;
+    max-width: 800px;
+    
+    align-items: flex-start;
+
+    border-bottom: 1px dashed var(--b20);
+
+
+    padding: 12px;
+    a{
+        text-decoration: none;
+        color: var(--blue);
+    }
+    img{
+        width: 24px;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.content-area .project-line:first-child{
+    border-top: 1px dashed var(--b20);
 }
 
 
