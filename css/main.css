@@ -18,7 +18,6 @@
     --nav-width: 160px;
     --nav-height: 78px;
     --modal-height: 480px;
-    --mobile-spacing: 24px;
 }
 
 /* body *{border: 1px solid rgba(255,0,0,0.3);} */
@@ -365,7 +364,7 @@ li::marker {
     bottom: 0px;
     top: auto;
 
-    height: calc(var(--modal-height) + var(--mobile-spacing));
+    height: calc(var(--modal-height) + 12px);
     width: 100vw;
     z-index: 10;
 
@@ -376,10 +375,10 @@ li::marker {
     transition: transform 0.5s ease-in-out 0.1s;
 }
 .nav-button{
-    height: calc(var(--modal-height) + var(--mobile-spacing));
+    height: calc(var(--modal-height) + 12px);
     width: 100%;
     
-    padding: 0px var(--mobile-spacing);
+    padding: 0 20px 0 12px;
     margin: 0;
     
     display: flex;
@@ -432,13 +431,13 @@ li::marker {
 
 .mobile-links .link-btn{
     height: auto;
-    padding: 24px 24px 24px var(--mobile-spacing);
+    padding: 24px 24px 24px 44px;
     border-radius: 0;
 }
 
 .mobile-links .link-btn:nth-child(5){
     height: auto;
-    padding: 24px 24px var(--mobile-spacing) var(--mobile-spacing);
+    padding: 24px 24px 48px 44px;
 }
 
 
@@ -461,7 +460,7 @@ li::marker {
     }
 
     .logo-cell {
-        height: 152px;
+        height: 124px;
     }
 }
 
@@ -483,5 +482,9 @@ li::marker {
     .img-frame {
         width: 100%;
         height: 340px;
+    }
+
+    .about-container{
+        gap: 48px;
     }
 }
