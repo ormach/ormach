@@ -124,14 +124,19 @@ nav {
 
         height: 440px;
         width: 32%;
+        min-width: 240px;
 
         overflow: hidden;
 
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
 
         background-color: rgb(231, 231, 231);
+    }
+    .img-frame img{
+        position: absolute;
     }
     .ground {
         align-items: flex-end;
@@ -243,6 +248,7 @@ li::marker {
     flex-direction: column;
 }
 
+
 .skills-container{
     gap: var(--gap-sm);
     display: flex;
@@ -254,6 +260,7 @@ li::marker {
         width: max-content;
         border-radius: var(--corner);
     }
+
 
 .photo-wrapper{
     flex-wrap: wrap;
@@ -268,6 +275,7 @@ li::marker {
     .photo-container label {
         max-width: 100%;
     }
+
 
 .company-container {
     display: flex;
@@ -298,6 +306,7 @@ li::marker {
         color: var(--b50);
         font-size: 14px;
     }
+
 
 .gallery-banner{
     background-color: var(--b05); 
@@ -346,7 +355,8 @@ li::marker {
     }
 
 
-/* Tablet */
+
+/* MOBILE NAV */
 #mobile-nav{
     display: none;
 
@@ -431,6 +441,8 @@ li::marker {
     padding: 24px 24px var(--mobile-spacing) var(--mobile-spacing);
 }
 
+
+/* Tablet */
 @media (max-width: 1120px) {
     .img-frame {
         width: 48%;
@@ -454,7 +466,7 @@ li::marker {
 }
 
 /* Mobile */
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     body{
         font-size: 14px;
         line-height: 20px;
