@@ -482,5 +482,6 @@ li::marker {
 
     .img-frame {
         width: 100%;
+        height: 340px;
     }
 }
