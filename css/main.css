@@ -14,9 +14,11 @@
     --gap: 16px;
     --gap-sm:2px;
     --card: 320px;
+
     --nav-width: 160px;
-    --nav-height: 120px;
-    --modal-height: 560px;
+    --nav-height: 78px;
+    --modal-height: 480px;
+    --mobile-spacing: 24px;
 }
 
 /* body *{border: 1px solid rgba(255,0,0,0.3);} */
@@ -349,11 +351,11 @@ li::marker {
     display: none;
 
     position: fixed;
-    left: 0px;
+    left:   0px;
     bottom: 0px;
     top: auto;
 
-    height: var(--modal-height);
+    height: calc(var(--modal-height) + var(--mobile-spacing));
     width: 100vw;
     z-index: 10;
 
@@ -364,16 +366,17 @@ li::marker {
     transition: transform 0.5s ease-in-out 0.1s;
 }
 .nav-button{
-    background-color: rgba(0,0,0,0);
-    height: var(--nav-height);
+    height: calc(var(--modal-height) + var(--mobile-spacing));
     width: 100%;
-    padding: 0px 42px;
+    
+    padding: 0px var(--mobile-spacing);
     margin: 0;
-
+    
     display: flex;
     justify-content: space-between;
-
+    
     cursor: pointer;
+    background-color: rgba(0,0,0,0);
 }
 .menu-btn{
     display: flex;
@@ -386,8 +389,6 @@ li::marker {
 
     opacity: 1;
     transition: opacity 0.5s ease-in-out 0.1s;
-
-    
 }
 
 #menu-modal{
@@ -421,13 +422,13 @@ li::marker {
 
 .mobile-links .link-btn{
     height: auto;
-    padding: 24px 24px 24px 52px;
+    padding: 24px 24px 24px var(--mobile-spacing);
     border-radius: 0;
 }
 
 .mobile-links .link-btn:nth-child(5){
     height: auto;
-    padding: 24px 24px 52px 52px;
+    padding: 24px 24px var(--mobile-spacing) var(--mobile-spacing);
 }
 
 @media (max-width: 1120px) {
