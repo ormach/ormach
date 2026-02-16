@@ -474,6 +474,9 @@ li::marker {
     .logo-cell {
         min-width: 272px;
     }
+    .logo-cell img{
+        transform: scale(0.80);
+    }
 
     .content-area{
         padding: 48px 48px calc(var(--nav-height) + 48px) 48px;
