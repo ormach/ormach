@@ -60,6 +60,12 @@ let galleryContent = {
         style: 'width: 1000px;',
         class: 'full-width dark'
     },
+    'char': {
+        src: 'char-1280.jpg',
+        alt: 'An illustration of a set of items.',
+        class: 'full-width',
+        style: 'width: 1000px;'
+    },
     'chains-banner': {
         src: 'chain-banner.jpg',
         alt: 'An illustration of a combat game scene.',
@@ -74,12 +80,6 @@ let galleryContent = {
     },
     'env': {
         src: 'env-1280x720.jpg',
-        alt: 'An illustration of a combat game scene.',
-        class: 'full-width',
-        style: 'width: 880px;'
-    },
-    'chars': {
-        src: 'chars-1280x720.jpg',
         alt: 'An illustration of a combat game scene.',
         class: 'full-width',
         style: 'width: 880px;'
