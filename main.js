@@ -82,7 +82,7 @@ let galleryContent = {
         src: 'char-1280.jpg',
         alt: 'An illustration of a set of items.',
         class: 'full-width',
-        style: 'width: 1000px;'
+        style: 'width: 800px;'
     },
     'chains-banner': {
         src: 'chain-banner.jpg',
