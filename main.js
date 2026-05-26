@@ -66,6 +66,12 @@ let galleryContent = {
         style: 'width: 1000px;',
         class: 'full-width'
     },
+    'areas': {
+        src: 'areas-1280.jpg',
+        alt: 'An illustration of a combat game scene.',
+        style: 'width: 1000px;',
+        class: 'full-width'
+    },
     'scribe-cover': {
         src: 'scribe-1280x720.jpg',
         alt: 'An illustration of a combat game scene.',
