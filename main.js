@@ -113,7 +113,7 @@ function generateNav(){
 
 function generateFooter(){
     el('footer').innerHTML = `
-        <img class="logo" src="../img/orm-footer-logo.png" alt="Ormach logo">
+        <img class="logo" src="../img/orm-logo.svg" alt="Ormach logo">
 
         <p>
             If you have any questions, send me a note to pav.ormach@gmail.com<br> 
