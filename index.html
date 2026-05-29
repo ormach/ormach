@@ -25,8 +25,8 @@
     <meta property="og:image:height" content="1200" >
 
     <!-- Descriptions -->
-    <meta property="og:description" content="A group of freelancers for digital products and games." />
-    <meta name="description" content="A group of freelancers for digital products and games.">
+    <meta property="og:description" content="A group of creatives working on games and websites." />
+    <meta name="description" content="A group of creatives working on games and websites.">
 
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/main.css">
@@ -48,89 +48,12 @@
 
 <body>
     
+    <!-- NAVIGATION -->
+    <nav id="desktop-nav"></nav>
+    <nav id="mobile-nav" class=""></nav>
+
     <div class="wrapper">
 
-        <!-- NAVIGATION -->
-        <nav class="desktop-nav">
-            
-            <!-- Logo -->
-            <a href="/index.html" class="logo-container">
-                <img class="logo" src="../img/orm-logo.svg" alt="Ormach logo">
-            </a>
-            
-            
-            <!-- Buttons -->
-            <div class="link-container">
-                <a class="link-btn" href="/index.html">
-                    <img src="../img/ico/black/view.svg">
-                    Gallery
-                </a>
-                <a class="link-btn" href="../projects">
-                    <img src="../img/ico/black/repair.svg">
-                    Projects
-                </a>
-                <a class="link-btn" href="../about">
-                    <img src="../img/ico/black/unit.svg">
-                    About
-                </a>
-                
-                <!-- <a class="link-btn" target="_blank" href="https://discord.gg/AT8KdVbcVT"> 
-                    <img src="../img/ico/black/discord.svg">
-                    Discord
-                </a> -->
-
-                <a class="link-btn" target="_blank" href="https://ormach.itch.io/">
-                    <img src="../img/ico/black/shop.svg">
-                    Shop
-                </a>
-            </div>
-        </nav>
-
-        <nav id="mobile-nav" class="">
-            <button class="nav-button" onclick="toggleMenu()">
-
-                <img class="logo" src="../img/orm-logo.svg" alt="Ormach logo">
-                
-                <div class="menu-btn">
-                    <img src="../img/ico/menu.svg">
-                </div>
-
-            </button>
-
-            <div class="mobile-links">
-                <a class="link-btn" href="/index.html">
-                    <img src="../img/ico/black/view.svg">
-                    Gallery
-                </a>
-
-                <a class="link-btn" href="../projects">
-                    <img src="../img/ico/black/repair.svg">
-                    Project list
-                </a>
-    
-                <a class="link-btn" href="../about">
-                    <img src="../img/ico/black/unit.svg">
-                    About
-                </a>
-    
-                <!-- <a class="link-btn" target="_blank" href="https://discord.gg/AT8KdVbcVT"> 
-                    <img src="../img/ico/black/discord.svg">
-                    <p style="width: 100%;">Discord server</p>
-                    <img src="../img/ico/arrow.svg" style="opacity: 1;">
-                </a> -->
-    
-                <a class="link-btn" target="_blank" href="https://ormach.itch.io/">
-                    <img src="../img/ico/black/shop.svg">
-                     <p style="width: 100%;">Shop (itch.io)</p>
-                    <img src="../img/ico/arrow.svg" style="opacity: 1;">
-                </a>
-    
-                <button class="link-btn" onclick="toggleMenu()">
-                    <img src="../img/ico/close.svg">
-                    
-                </button>
-            </div>
-        </nav>
         
         <!-- Modal -->
         <div id="modal" class="hide" onclick="modal()">
@@ -184,8 +107,14 @@
         </div>
     </div>
 
+    <footer id="footer"></footer>
+
     <script src="../main.js"></script>
-    <script>generateGallery()</script>
+    <script>
+        generateNav();
+        generateGallery();
+        generateFooter();
+    </script>
 
 </body>
 </html>

@@ -24,9 +24,9 @@
     <meta property="og:image:width" content="1200" >
     <meta property="og:image:height" content="1200" >
 
-<!-- Descriptions -->
-    <meta property="og:description" content="A group of freelancers for digital products and games." />
-    <meta name="description" content="A group of freelancers for digital products and games.">
+    <!-- Descriptions -->
+    <meta property="og:description" content="A group of creatives working on games and websites."/>
+    <meta name="description" content="A group of creatives working on games and websites.">
 
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/main.css">
@@ -47,91 +47,13 @@
 </head>
 
 <body>
-    
+    <!-- ABOUT -->
+
+    <!-- NAVIGATION -->
+    <nav id="desktop-nav"></nav>
+    <nav id="mobile-nav" class=""></nav>
+
     <div class="wrapper">
-
-        <!-- NAVIGATION -->
-        <nav class="desktop-nav">
-            
-            <!-- Logo -->
-            <a href="/index.html" class="logo-container">
-                <img class="logo" src="../img/orm-logo.svg" alt="" >
-            </a>
-            
-            
-            <!-- Buttons -->
-            <div class="link-container">
-                <a class="link-btn" href="/index.html">
-                    <img src="../img/ico/black/view.svg">
-                    Gallery
-                </a>
-                <a class="link-btn" href="../projects">
-                    <img src="../img/ico/black/repair.svg">
-                    Projects
-                </a>
-                <a class="link-btn" href="../about">
-                    <img src="../img/ico/black/unit.svg">
-                    About
-                </a>
-                
-                <!-- <a class="link-btn" target="_blank" href="https://discord.gg/AT8KdVbcVT"> 
-                    <img src="../img/ico/black/discord.svg">
-                    Discord
-                </a> -->
-                <a class="link-btn" target="_blank" href="https://ormach.itch.io/">
-                    <img src="../img/ico/black/shop.svg">
-                    Shop
-                </a>
-            </div>
-        </nav>
-
-        <nav id="mobile-nav" class="">
-            <button class="nav-button" onclick="toggleMenu()">
-
-                <img class="logo" src="../img/orm-logo-h.svg" alt="" >
-                
-                <div class="menu-btn">
-                    <img src="../img/ico/menu.svg">
-                </div>
-
-            </button>
-
-            <div class="mobile-links">
-                <a class="link-btn" href="/index.html">
-                    <img src="../img/ico/black/view.svg">
-                    Gallery
-                </a>
-
-                <a class="link-btn" href="../projects">
-                    <img src="../img/ico/black/repair.svg">
-                    Project list
-                </a>
-    
-                <a class="link-btn" href="../about">
-                    <img src="../img/ico/black/unit.svg">
-                    About
-                </a>
-    
-                <!-- <a class="link-btn" target="_blank" href="https://discord.gg/AT8KdVbcVT"> 
-                    <img src="../img/ico/black/discord.svg">
-                    <p style="width: 100%;">Discord server</p>
-                    <img src="../img/ico/arrow.svg" style="opacity: 1;">
-                </a> -->
-    
-                <a class="link-btn" target="_blank" href="https://ormach.itch.io/">
-                    <img src="../img/ico/black/shop.svg">
-                     <p style="width: 100%;">Shop (itch.io)</p>
-                    <img src="../img/ico/arrow.svg" style="opacity: 1;">
-                </a>
-    
-                <button class="link-btn" onclick="toggleMenu()">
-                    <img src="../img/ico/close.svg">
-                    
-                </button>
-            </div>
-        </nav>
-        
-
         <!-- CONTENT -->
         <!-- keep extra container for nav position -->
         <div class="content-container">
@@ -148,8 +70,8 @@
                     ***
                     <br><br>
 
-                    -> You can find our board games in the <a target="_blank" href="https://ormach.itch.io/">itch.io shop</a>.<br>
-                    -> Send questions to <a href="mailto:epaveluxd@gmail.com">paveluxd@gmail.com</a>.
+                    -> You can find our board games in the <a target="_blank" href="https://ormach.itch.io/">Itch.io shop</a>.<br>
+                    -> Send questions to <a href="mailto:pav.ormach@gmail.com">pav.ormach@gmail.com</a>.
 
                 </p>
                 
@@ -255,10 +177,10 @@
                         <img src="../img/ico/id=itch,%20variant=3.svg" alt="">
                         ormach.itch.io
                     </a>
-                    <a class="link-btn" target="_blank" href="https://discord.gg/AT8KdVbcVT">
+                    <!-- <a class="link-btn" target="_blank" href="https://discord.gg/AT8KdVbcVT">
                         <img src="../img/ico/id=discord-2,%20variant=3.svg" alt="">
                         Discord server
-                    </a>
+                    </a> -->
                     <!-- <a class="link-btn" target="_blank" href="https://www.instagram.com/pav_ormach/">
                         <img src="../img/ico/id=book,%20variant=3.svg" alt="">
                         Instagram: pav_ormach
@@ -288,6 +210,9 @@
     </div>
 
     <script src="../main.js"></script>
+    <script>
+        generateNav();
+    </script>
 
 </body>
 </html>
