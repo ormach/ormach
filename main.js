@@ -121,13 +121,13 @@ function generateFooter(){
         </p>
 
         <div class="footerButtonContainer">
-            <a class="link-btn btn-2 ico" href="../about"><img src="../img/ico/black/discord.svg"></a>
-            <a class="link-btn btn-2" href="../about">Learn more about ORMACH -></a>
+        <a class="link-btn btn-2" href="../about">Learn more about ORMACH -></a>
         </div>
-
+        
         <div class="footerBackground"></div>
-    `
+        `
 }
+        // <a class="link-btn btn-2 ico" href="../about"><img src="../img/ico/black/discord.svg"></a>
 
 function generateGallery() {
     for (const [key, value] of Object.entries(galleryContent)) {
