@@ -37,26 +37,26 @@ function generateNav(){
             <!-- Buttons -->
             <div class="link-container">
                 <a class="link-btn" href="/index.html">
-                    <img src="../img/ico/black/view.svg">
+                    
                     Gallery
                 </a>
                 <a class="link-btn" href="../projects">
-                    <img src="../img/ico/black/repair.svg">
+                    
                     Projects
                 </a>
                 <a class="link-btn" href="../about">
-                    <img src="../img/ico/black/unit.svg">
+                    
                     About
                 </a>
                 
-                <!-- <a class="link-btn" target="_blank" href="https://discord.gg/AT8KdVbcVT"> 
-                    <img src="../img/ico/black/discord.svg">
+                <a class="link-btn" target="_blank" href="https://discord.gg/mstCcBQeku"> 
+                   
                     Discord
-                </a> -->
+                </a>
 
                 <a class="link-btn" target="_blank" href="https://ormach.itch.io/">
-                    <img src="../img/ico/black/shop.svg">
-                    Shop
+                    
+                    Itch.io
                 </a>
             </div>
 
@@ -91,11 +91,11 @@ function generateNav(){
                 About
             </a>
 
-            <!-- <a class="link-btn" target="_blank" href="https://discord.gg/AT8KdVbcVT"> 
+            <a class="link-btn" target="_blank" href="https://discord.gg/mstCcBQeku"> 
                 <img src="../img/ico/black/discord.svg">
-                <p style="width: 100%;">Discord server</p>
-                <img src="../img/ico/arrow.svg" style="opacity: 1;">
-            </a> -->
+                <p style="width: 100%;">Discord</p>
+                <img src="../img/ico/black/arrow.svg" style="opacity: 1;">
+            </a>
 
             <a class="link-btn" target="_blank" href="https://ormach.itch.io/">
                 <img src="../img/ico/black/shop.svg">
@@ -105,7 +105,6 @@ function generateNav(){
 
             <button class="link-btn" onclick="toggleMenu()">
                 <img src="../img/ico/black/close.svg">
-                
             </button>
         </div>
     `
@@ -117,7 +116,7 @@ function generateFooter(){
 
         <p>
             If you have any questions, send me a note to pav.ormach@gmail.com 
-            or find me on Discord. Lets make you game better! 
+            or find me on <a href="https://discord.gg/mstCcBQeku" target="_blank">Discord</a>. Lets make you game better! 
         </p>
 
         <div class="footerButtonContainer">
