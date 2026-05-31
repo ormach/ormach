@@ -1,6 +1,6 @@
 function toggleMenu(){
     document.getElementById("mobile-nav").classList.toggle("offset")
-    document.body.classList.toggle('scrollLock')
+    document.body.classList.toggle('mobileScrollLock')
 }
 
 function modal(source) {
@@ -27,7 +27,7 @@ function el(id){
 function generateNav(){
 
     el('desktop-nav').innerHTML = `
-        <div id="nav-wrapper">
+        <div id="nav-wrapper" class="breakpoints">
 
             <!-- Logo -->
             <a href="/index.html" class="logo-container">
@@ -65,17 +65,17 @@ function generateNav(){
     ` 
 
     el('mobile-nav').innerHTML=`
-        <button class="nav-button" onclick="toggleMenu()">
+        <button class="nav-button breakpoints" onclick="toggleMenu()">
 
             <img class="logo" src="../img/orm-logo.svg" alt="Ormach logo">
             
             <div class="menu-btn">
-                <img src="../img/ico/menu.svg">
+                <img src="../img/ico/black/menu.svg">
             </div>
 
         </button>
 
-        <div class="mobile-links">
+        <div class="mobile-links breakpoints">
             <a class="link-btn" href="/index.html">
                 <img src="../img/ico/black/view.svg">
                 Gallery
@@ -100,11 +100,11 @@ function generateNav(){
             <a class="link-btn" target="_blank" href="https://ormach.itch.io/">
                 <img src="../img/ico/black/shop.svg">
                     <p style="width: 100%;">Shop (itch.io)</p>
-                <img src="../img/ico/arrow.svg" style="opacity: 1;">
+                <img src="../img/ico/black/arrow.svg" style="opacity: 1;">
             </a>
 
             <button class="link-btn" onclick="toggleMenu()">
-                <img src="../img/ico/close.svg">
+                <img src="../img/ico/black/close.svg">
                 
             </button>
         </div>
@@ -116,18 +116,17 @@ function generateFooter(){
         <img class="logo" src="../img/orm-logo.svg" alt="Ormach logo">
 
         <p>
-            If you have any questions, send me a note to pav.ormach@gmail.com<br> 
+            If you have any questions, send me a note to pav.ormach@gmail.com 
             or find me on Discord. Lets make you game better! 
         </p>
 
         <div class="footerButtonContainer">
-        <a class="link-btn btn-2" href="../about">Learn more about ORMACH -></a>
+            <a class="link-btn btn-2" href="../about">Learn more about ORMACH -></a>
         </div>
         
         <div class="footerBackground"></div>
-        `
+    `
 }
-        // <a class="link-btn btn-2 ico" href="../about"><img src="../img/ico/black/discord.svg"></a>
 
 function generateGallery() {
     for (const [key, value] of Object.entries(galleryContent)) {
@@ -207,101 +206,4 @@ let galleryContent = {
         class: 'full-width',
         style: 'width: 880px;'
     },
-
-    // 'dungeon': {
-    //     src: 'dungeon-1280x720.jpg',
-    //     alt: 'An illustration of a combat game scene.',
-    //     style: 'width: 1280px;'
-    // },
-    // 'char': {
-    //     src: 'chars-1280x720.jpg',
-    //     alt: 'An illustration of a combat game scene.',
-    //     style: 'width: 1280px;'
-    // },
-    // 'mech': {
-    //     src: 'mech-920x600.png',
-    //     alt: 'Vector illustration of a mech.',
-    //     style: 'height: 600px;'
-    // },
-    // 'card1': {
-    //     src:   'ang-160x240.png',
-    //     alt:   'Vector illustration of a card, that contains an angel.',
-    //     style: 'width: 160px;'
-    // },
-    // 'card2': {
-    //     src:   'acc-160x240.png',
-    //     alt:   'Vector illustration of a card, that contains a jumping rogue.',
-    //     style: 'width: 160px;'
-    // },
-    // 'gates': {
-    //     src:   'key-520x520.png',
-    //     alt:   'Vector illustration of a group of characters in front of a fire.',
-    //     style: 'width: 520px;'
-    // },
-    // 'unit1': {
-    //     src:   'unit-400x400.png',
-    //     alt:   'Vector illustration of two game characters.',
-    //     style: 'width: 400px;'
-    // },
-    // 'items2': {
-    //     src:   'item-400x400.png',
-    //     alt:   'Vector illustration of game items.',
-    //     style: 'width: 400px;'
-    // },
-    // 'unit2': {
-    //     src:   'unit2-400x400.png',
-    //     alt:   'Vector illustration of two characters.',
-    //     style: 'width: 400px;'
-    // },
-    // 'card3': {
-    //     src:   'potential-160x240.png',
-    //     alt:   'Illustration of a card with an archer.',
-    //     style: 'width: 160px;'
-    // },
-    // 'card4': {
-    //     src:   'space-160x240.png',
-    //     alt:   'Illustration of a card.',
-    //     style: 'width: 160px;'
-    // },
-    // 'card5': {
-    //     src:   'velocity-160x240.png',
-    //     alt:   'Illustration of a card.',
-    //     style: 'width: 160px;'
-    // },
-    // 'rex': {
-    //     src:   'rex-440x356.png',
-    //     alt:   'Vector illustration of a cartoon dinosaur.',
-    //     style: 'width: 440px; bottom: 0px; left: 0px;'
-    // },
-    // 'items3': {
-    //     src:   'items2-200x200.png',
-    //     alt:   'Vector icons for game items.',
-    //     style: 'width: 200px;'
-    // },
-    // 'jar': {
-    //     src:   'jar-122x96.png',
-    //     alt:   'Vector illustration of a cartoon jar.',
-    //     style: 'width: 244px;'
-    // },
-    // 'tech1': {
-    //     src:   'tech-300x300.png',
-    //     alt:   'Vector illustration of laptop and a Boston Dynamics Spot robot dog.',
-    //     style: 'width: 300px;'
-    // },
-    // 'tech2': {
-    //     src:   'tech2-300x300.png',
-    //     alt:   'Vector illustration of a robot manipulator arm, and a jet engine.',
-    //     style: 'width: 300px;'
-    // },
-    // 'tech3': {
-    //     src:   'tech3-300x300.png',
-    //     alt:   'Vector illustration of a 3D modeling software and a 3D printer.',
-    //     style: 'width: 300px;'
-    // },
-    // 'map': {
-    //     src:   'map-980x846.png',
-    //     alt:   'Vector illustration of a gallery map.',
-    //     style: 'width: 980px;',
-    //     class: 'transparent'
-    // },
 }

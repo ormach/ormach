@@ -52,8 +52,7 @@
     <nav id="desktop-nav"></nav>
     <nav id="mobile-nav" class=""></nav>
 
-    <div class="wrapper">
-
+    <div class="wrapper breakpoints">
         
         <!-- Modal -->
         <div id="modal" class="hide" onclick="modal()">
@@ -78,28 +77,183 @@
 
         <!-- CONTENT -->
         <!-- keep extra container for nav position -->
-        <div class="content-container">
-            <div id="gallery" class="content-area">
+        <div id="gallery" class="content-area">
+            
+            <div class="img-frame" style="gap: 72px;">
+                <img src="../img/work/esc-1280.jpg"
+                        class="border"
+                        style="
+                        max-width: 540px; width: 100%;
+                        box-shadow: 0px 4px 8px rgba(0,0,0,0.14);
+                    " 
+                        alt="Illustration of two sci-fi characters in an urban environment.">
                 
-                <div 
-                    class="img-frame text-card full-width vertical" 
-                    style="gap: 48px; cursor: auto;"
-                
-                >
-                    
-                    <img src="../img/work/esc-1280.jpg" style="width: 600px;" alt="Vector illustration of a sun.">
+                <div class="card-group tabletLargeHide">
+                    <div class="cardContainer" 
+                            style="
+                            background-image: url(../img/work/card-frame-1.svg);
+                            transform: rotate(0deg);
+                            z-index: 3;
+                            top: 52px;
+                            left: 8px;
+                        "
+                    >
+                        <img src="../img/work/card-img-1.jpg" alt="Image of a card.">
+                    </div>
+                    <div class="cardContainer" 
+                            style="
+                            background-image: url(../img/work/card-frame-2.svg);
+                            transform: rotate(0deg);
+                            z-index: 3;
+                            top: 0;
+                            right: -8px;
+                        "
+                    >
+                        <img src="../img/work/card-img-2.jpg" alt="Image of a card.">
+                    </div>
+                    <div class="cardContainer" 
+                            style="
+                            background-image: url(../img/work/card-frame-3.svg);
+                            transform: rotate(0deg);
+                            z-index: 2;
+                            top: 232px;
+                            left: -28px;   
+                            opacity: 0.5;  
+                            "
+                    >
+                        <img src="../img/work/card-img-3.jpg" alt="Image of a card.">
+                    </div>
+                        <div class="cardContainer" 
+                            style="
+                            background-image: url(../img/work/card-frame-4.svg);
+                            transform: rotate(0deg);
+                            top: 200px;
+                            right: 28px;    
+                            opacity: 0.8;
+                            "
+                    >
+                        <img src="../img/work/card-img-4.jpg" alt="Image of a card.">
+                    </div>
+
+                    <p 
+                        class="tabletLargeHide"
+                        style="max-width: 360px; position: absolute; bottom: -12px; text-align: center; font-style: italic;"
+                    >
+                        Hi! I draw cards, assets, logos &amp all kinds of stuff for games.                        
+                    </p>
                 </div>
+            </div>
+            
+            <div class="img-frame">
+                <img src="../img/work/env-1.jpg" 
+                    class="tabletLargeHide"
+                    style="width: 238px;" 
+                    alt="Illustration.">
+                
+                <img src="../img/work/shrom.jpg" 
+                    class="tabletLargeHide"
+                    style="width: 100px; transform: translate(0px, -85px);" 
+                    alt="Illustration.">
+
+                <img src="../img/work/nether-1280.jpg" 
+                    style="
+                        max-width: 800px; width: 100%;
+                        transform: rotate(0deg);" 
+                    alt="Illustration.">
+            </div>
+
+            <div class="img-frame">
+                <img src="../img/work/chains-800.jpg" 
+                    style="max-width: 800px; width: 100%;" 
+                    alt="Illustration.">
+
+                <img src="../img/work/axe.jpg" 
+                    class="tabletLargeHide"
+                    style="width: 75px; transform: rotate(-14deg) translate(-22px, 82px); z-index: -1;" 
+                    alt="Illustration.">
+
+                <img src="../img/work/chain-banner.jpg" 
+                    class="tabletLargeHide"
+                    style="width: 276px; transform:rotate(3deg) translate(-32px, -57px);" 
+                    alt="Illustration.">
+            </div>
+
+            <div class="img-frame">
+                <img src="../img/work/env-2.jpg" 
+                    class="tabletLargeHide"
+                    style="width: 238px; transform: rotate(-2deg);" 
+                    alt="Illustration.">
+
+                <img src="../img/work/char-1.jpg" 
+                    class="tabletLargeHide"
+                    style="width: 75px;" 
+                    alt="Illustration.">
+
+                
+                <img src="../img/work/scribe-800.jpg" 
+                    style="max-width: 720px; width: 100%;" 
+                    alt="Illustration.">
+                
+            </div>
+
+            <div class="img-frame">
+                <img src="../img/work/cards-1280.jpg" 
+                            style="
+                                max-width: 1200px; width: 100%;
+                            " 
+                            alt="Illustration of various creatures and characters for cards.">
+            </div>
+
+            <div class="img-frame tabletLargeHide" 
+                style="
+                    height: 240px;
+                    flex-direction: column;
+                "
+                
+            >
+                <p style="max-width: 400px; text-align: center;">
+                    I do everything by hand, large illustration take ~40 hours to complete.
+                </p>
+
+                <p>***</p>
+
+                <div style="display: flex;">
+                    <img src="../img/work/sketch-1.jpg" 
+                            class="border"
+                            style="width: 340px; transform: translate(77px, -32px); z-index: -1;" 
+                            alt="Illustration.">
     
+                    <img src="../img/work/sketch-2.jpg"
+                            class="border"
+                            style="width: 340px;" 
+                            alt="Illustration.">
+    
+                    <img src="../img/work/sketch-3.jpg" 
+                            class="border"
+                            style="width: 340px; transform: translate(-77px, 32px);" 
+                            alt="Illustration.">
+                </div>
+
+                <p style="transform: rotate(180deg);">***</p>
+            </div>
+
+
+            <div class="img-frame">
+                <img src="../img/work/items-1280x720.jpg" 
+                style="
+                    max-width: 1080px; width: 100%;
+                " 
+                alt="Illustration of various items.">
             </div>
         </div>
+        
     </div>
 
-    <footer id="footer"></footer>
+    <footer id="footer" class="breakpoints"></footer>
 
     <script src="../main.js"></script>
     <script>
         generateNav();
-        generateGallery();
         generateFooter();
     </script>
 
