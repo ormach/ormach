@@ -65,7 +65,7 @@ function generateNav(){
     ` 
 
     el('mobile-nav').innerHTML=`
-        <button class="nav-button breakpoints" onclick="toggleMenu()">
+        <button class="nav-button" onclick="toggleMenu()">
 
             <img class="logo" src="../img/orm-logo.svg" alt="Ormach logo">
             
@@ -75,7 +75,7 @@ function generateNav(){
 
         </button>
 
-        <div class="mobile-links breakpoints">
+        <div class="mobile-links">
             <a class="link-btn" href="/index.html">
                 <img src="../img/ico/black/view.svg">
                 Gallery

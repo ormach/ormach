@@ -280,7 +280,7 @@
         align-items: center;
 
         gap: 22px;
-        padding: 120px 32px;
+        padding: 120px 0;
     }
         footer .logo{
             height: 66px;
@@ -345,8 +345,9 @@
     }
     .nav-button{
         height: var(--nav-height);
+        width: 100%;
         
-        padding: 0 0 0 12px;
+        padding: 0 16px 0 24px;
         margin: 0;
         
         display: flex;
@@ -396,6 +397,7 @@
     }
     .mobile-links{
         /* height: 300px; */
+        width: 100%;
     }
     .mobile-links .link-btn{
         height: auto;
