@@ -49,7 +49,7 @@ function generateNav(){
                     About
                 </a>
                 
-                <a class="link-btn" target="_blank" href="https://discord.gg/mstCcBQeku"> 
+                <a class="link-btn" target="_blank" href="https://discord.gg/qbWS6g5vam"> 
                    
                     Discord
                 </a>
@@ -91,7 +91,7 @@ function generateNav(){
                 About
             </a>
 
-            <a class="link-btn" target="_blank" href="https://discord.gg/mstCcBQeku"> 
+            <a class="link-btn" target="_blank" href="https://discord.gg/qbWS6g5vam"> 
                 <img src="../img/ico/black/discord.svg">
                 <p style="width: 100%;">Discord</p>
                 <img src="../img/ico/black/arrow.svg" style="opacity: 1;">
@@ -116,7 +116,7 @@ function generateFooter(){
 
         <p>
             If you have any questions, send me a note to pav.ormach@gmail.com 
-            or find me on <a href="https://discord.gg/mstCcBQeku" target="_blank">Discord</a>. Lets make you game better! 
+            or find me on <a href="https://discord.gg/qbWS6g5vam" target="_blank">Discord</a>. Lets make you game better! 
         </p>
 
         <div class="footerButtonContainer">
