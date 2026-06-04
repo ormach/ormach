@@ -454,6 +454,7 @@
             align-items: center;
             justify-content: center;
 
+            min-width: 254px;
             width: 254px;
             height: 402px;
 
