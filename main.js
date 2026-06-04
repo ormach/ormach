@@ -101,21 +101,40 @@ function generateNav(){
     `
 }
 
-function generateFooter(){
-    el('footer').innerHTML = `
-        <img class="logo" src="../img/orm-logo.svg" alt="Ormach logo">
+function generateFooter(type){
+    if (type === "gallery"){
+        el('footer').innerHTML = `
+            <img class="logo" src="../img/orm-logo.svg" alt="Ormach logo">
+    
+            <p>
+                If you have any questions, send me a note to pav.ormach@gmail.com 
+                or find me on <a href="https://discord.gg/qbWS6g5vam" target="_blank">Discord</a>. Lets make you game better! 
+            </p>
+    
+            <div class="footerButtonContainer">
+                <a class="link-btn btn-2" href="../">View Gallery -></a>
+            </div>
+            
+            <div class="footerBackground"></div>
+        `
+    }
+    else{
 
-        <p>
-            If you have any questions, send me a note to pav.ormach@gmail.com 
-            or find me on <a href="https://discord.gg/qbWS6g5vam" target="_blank">Discord</a>. Lets make you game better! 
-        </p>
-
-        <div class="footerButtonContainer">
-            <a class="link-btn btn-2" href="../about">Learn more about ORMACH -></a>
-        </div>
-        
-        <div class="footerBackground"></div>
-    `
+        el('footer').innerHTML = `
+            <img class="logo" src="../img/orm-logo.svg" alt="Ormach logo">
+    
+            <p>
+                If you have any questions, send me a note to pav.ormach@gmail.com 
+                or find me on <a href="https://discord.gg/qbWS6g5vam" target="_blank">Discord</a>. Lets make you game better! 
+            </p>
+    
+            <div class="footerButtonContainer">
+                <a class="link-btn btn-2" href="../about">Learn more about ORMACH -></a>
+            </div>
+            
+            <div class="footerBackground"></div>
+        `
+    }
 }
 
 function generateGallery() {
