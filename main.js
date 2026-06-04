@@ -37,25 +37,16 @@ function generateNav(){
             <!-- Buttons -->
             <div class="link-container">
                 <a class="link-btn" href="/index.html">
-                    
                     Gallery
                 </a>
                 <a class="link-btn" href="../projects">
-                    
                     Projects
                 </a>
                 <a class="link-btn" href="../about">
-                    
                     About
-                </a>
-                
-                <a class="link-btn" target="_blank" href="https://discord.gg/qbWS6g5vam"> 
-                   
-                    Discord
                 </a>
 
                 <a class="link-btn" target="_blank" href="https://ormach.itch.io/">
-                    
                     Itch.io
                 </a>
             </div>
