@@ -108,7 +108,7 @@ function generateFooter(type){
     
             <p>
                 If you have any questions, send me a note to pav.ormach@gmail.com 
-                or find me on <a href="https://discord.gg/qbWS6g5vam" target="_blank">Discord</a>. Let's make you game better! 
+                or find me on <a href="https://discord.gg/qbWS6g5vam" target="_blank">Discord</a>. Let's make your game better! 
             </p>
     
             <div class="footerButtonContainer">
@@ -125,7 +125,7 @@ function generateFooter(type){
     
             <p>
                 If you have any questions, send me a note to pav.ormach@gmail.com 
-                or find me on <a href="https://discord.gg/qbWS6g5vam" target="_blank">Discord</a>. Let's make you game better! 
+                or find me on <a href="https://discord.gg/qbWS6g5vam" target="_blank">Discord</a>. Let's make your game better! 
             </p>
     
             <div class="footerButtonContainer">
