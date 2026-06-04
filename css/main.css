@@ -528,12 +528,28 @@
 
 
 /* ABOUT */
+    .bio{
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        gap: 52px;
+        font-size: 14px;
+
+        p{
+
+            max-width: 340px;
+            width: 100%;
+            padding-top: 72px;
+        }
+    }
     .about-container{
         /* align-items: center; */
         max-width: calc(880px + (160px * 2));
         gap: 96px;
         padding-bottom: 96px;
         flex-direction: column;
+
+        
     }
 
 
@@ -762,6 +778,9 @@
 @media (max-width: 808px) {
     .breakpoints{
         max-width: 568px;
+    }
+    .bio{
+        flex-direction: column;
     }
 }
 /* Mobile L */
