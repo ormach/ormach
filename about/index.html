@@ -61,7 +61,7 @@
     <nav id="desktop-nav"></nav>
     <nav id="mobile-nav" class=""></nav>
 
-    <div class="wrapper">
+    <div class="wrapper" style="overflow-x: hidden;">
         <!-- CONTENT -->
         <!-- keep extra container for nav position -->
         <div class="content-container">
@@ -71,13 +71,8 @@
                 
                 
                 <!-- Photos -->
-                <div class="bio">
-                    
-                    <div class="photo-container">
-                        <img src="../img/photo/pav2.jpg" alt="Photo of Pavel" style="border-radius: 999px 999px 0 0; width: 260px; height: 540px;">
-                    </div>
-
-                    <p style="">
+                <div class="bio" >             
+                    <p id="about">
                         Hi! My name is Pavel, I am a game illustrator &amp; designer from Latvia. 
                         
                         <br><br>
@@ -93,6 +88,23 @@
                         Say hi at pav.ormach@gmail.com
     
                     </p>
+
+                    <div class="photo-container" 
+                        style="
+                            width: 100%;
+                            max-width: 540px;
+                            height: 540px; 
+
+                            display: flex; 
+                            flex-direction: column; 
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            gap: 12px;
+                    ">
+                        <img src="../img/photo/pav2.jpg"     alt="Photo of Pavel" style="border-radius: 999px 999px 0 0; width: 260px; height: 540px;">
+                        <img src="../img/photo/bike-sea.jpg" class="tabletLargeHide" alt="Photo of my bike, a 1993 Gian Escaper." style="border-radius: 999px 999px 0 0; width: 260px; height: 260px;">
+                        <img src="../img/photo/table.jpg"    class="tabletLargeHide" alt="Photo of my work table." style="border-radius: 999px 999px 0 0; width: 260px; height: 260px;">
+                    </div>
 
                 </div>
 

@@ -532,24 +532,23 @@
         display: flex; 
         justify-content: center; 
         align-items: center; 
+        /* flex-wrap: wrap; */
+
         gap: 52px;
-        font-size: 14px;
+
+
+
+        
 
         p{
-
             max-width: 340px;
             width: 100%;
-            padding-top: 72px;
         }
     }
     .about-container{
-        /* align-items: center; */
-        max-width: calc(880px + (160px * 2));
         gap: 96px;
         padding-bottom: 96px;
-        flex-direction: column;
-
-        
+        flex-direction: column; 
     }
 
 
@@ -779,8 +778,10 @@
     .breakpoints{
         max-width: 568px;
     }
-    .bio{
+
+    .bio {
         flex-direction: column;
+        align-items: flex-start; 
     }
 }
 /* Mobile L */
