@@ -660,24 +660,24 @@
 
 
 /* PROJECTS */
-    .project-line.dark{
-        color: white;
-        border-radius: var(--corner);
-    }
+
     .project-line{
 
         display: flex;
         flex-direction: column;
         gap: 32px;
         width: 100%;
-        height: fit-content;
-        max-width: 800px;
+        height: 400px;
+        max-width: 340px;
         
         justify-content: space-between;
         align-items: flex-start;
 
-        border-bottom: 1px dashed var(--b20);
+        border: 1px dashed var(--b20);
         padding: 32px;
+
+        font-size: 14px;
+        line-height: 20px;
 
         a{
             text-decoration: none;
@@ -693,8 +693,8 @@
             align-items: center;
 
             .ico{
-                height: 56px !important;
-                width: 56px;
+                height: 52px !important;
+                width: 52px;
 
                 display: flex;
                 justify-content: center;
