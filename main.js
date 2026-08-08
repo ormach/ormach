@@ -45,9 +45,8 @@ function generateNav(){
                 <a class="link-btn" href="../about">
                     About
                 </a>
-
-                <a class="link-btn" target="_blank" href="https://ormach.itch.io/">
-                    Itch.io
+                <a class="link-btn" target="_blank" href="https://discord.gg/qbWS6g5vam">
+                    Discord
                 </a>
             </div>
 
@@ -85,12 +84,6 @@ function generateNav(){
             <a class="link-btn" target="_blank" href="https://discord.gg/qbWS6g5vam"> 
                 <img src="../img/ico/black/discord.svg">
                 <p style="width: 100%;">Discord</p>
-                <img src="../img/ico/black/arrow.svg" style="opacity: 1;">
-            </a>
-
-            <a class="link-btn" target="_blank" href="https://ormach.itch.io/">
-                <img src="../img/ico/black/shop.svg">
-                    <p style="width: 100%;">Shop (itch.io)</p>
                 <img src="../img/ico/black/arrow.svg" style="opacity: 1;">
             </a>
 
