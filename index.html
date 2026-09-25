@@ -60,9 +60,146 @@
     <nav id="desktop-nav"></nav>
     <nav id="mobile-nav" class=""></nav>
 
-    <div class="wrapper breakpoints">
+    <div id="gallery"  class="wrapper breakpoints content-area">
         
-        <!-- Modal -->
+        <!-- CHAINS KEY -->
+        <div 
+            class="outline chains-container img-frame" 
+            style="gap: 52px; flex-direction: column; padding: 72px 0;">
+
+            <div class="full-width-wrapper">
+                <img 
+                    class="chains-key"
+                    src="../img/work/com-800.jpg" 
+                    alt="Illustration."
+                >  
+            </div>
+
+            <p class=""
+                style="
+                    max-width: 520px; 
+                    text-align: center; 
+                    font-style: italic;
+                "
+            >
+                Hi, my name is Pavel. I make illustrations and design for games.
+                See my recent work below. Visit discord if you have any questions.                      
+            </p>
+        </div>
+
+        <!-- ESCAPER -->
+        <div class="img-frame escaper-container columnAtTabletL" >
+            <img src="../img/work/esc-540.jpg" class="max-width" 
+                alt="Illustration of two sci-fi characters in an urban environment."
+                loading = "lazy"
+            >
+
+            <div class="column" style="margin-top:auto; gap: 24px; width: 100%; max-width: 424px; height: 100%; justify-content: flex-end;">
+
+                <img src="../img/logo/escaper-112.png" alt="Escaper logo" style="width: 112px;">
+                
+                <p class="italic" style="width: 100%;">
+                    Cover illustration and logo for<br>a play-by-post d20 RPG system.                       
+                </p>
+            </div>
+        </div>
+
+        <!-- DIE FOR LOOT -->
+        <div class="img-frame" style="flex-direction: column; margin: 52px 0;">
+            <div class="dfl-container">
+                <img class="tablet-screen" src="../img/work/dfl-void-800.jpg" alt="Illustration." loading="lazy">  
+                
+                <img class="tablet-screen" src="../img/work/dfl-table-800.jpg" alt="Illustration." loading="lazy"> 
+            </div>
+
+            <p class="italic" style="text-align: center;">
+                Illustrations and UI for a dice puzzle mini-game.                        
+            </p>
+        </div>
+
+        <div class="img-row img-frame outline" style="padding: 72px 0;">
+            <!-- <img src="../img/work/dfl-book-180.jpg" style="transform: translateY(32px); width: 100%; max-width: 180px;" alt="Image of a card."> -->
+            <img src="../img/work/dfl-crown-180.png" style="width: 100%; max-width: 180px;" alt="Image of a card.">
+            <img src="../img/work/dfl-shield-180.png" style="width: 100%; max-width: 180px;" alt="Image of a card.">
+            <img src="../img/work/dfl-armor-180.png" style="width: 100%; max-width: 180px;" alt="Image of a card.">
+            <img src="../img/work/dfl-mirror-180.png" style="width: 100%; max-width: 180px;" alt="Image of a card.">
+
+        </div>
+
+        <!-- SCRIBE -->
+        <div class="scribe-container img-frame"
+            style="
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(50,50,60);
+                padding: 48px;
+            "
+        >                
+            <img src="../img/work/ss-key-700.jpg" 
+                style="max-width: 700px; width: 100%;" 
+                loading = "lazy" 
+                alt="Illustration."
+            >
+        </div>     
+        
+        <div class="img-row img-frame outline" style="padding: 72px 0;">
+            <img src="../img/work/ss-wizard.jpg" style="transform: translateY(10px); width: 100%; max-width: 200px;" alt="Image of a card.">
+            <img src="../img/work/ss-jester.jpg" style="width: 100%; max-width: 200px;" alt="Image of a card.">
+            <img src="../img/work/ss-horse.jpg" style="width: 100%; max-width: 200px;" alt="Image of a card.">
+            <img src="../img/work/ss-ghost.jpg" style="width: 100%; max-width: 200px;" alt="Image of a card.">
+        </div>
+
+        <!-- RTR capsule -->
+        <div class="img-frame black">
+
+            <img src="../img/work/rtr-full.jpg" 
+                class="hideTabletS"
+                style="max-width: 600px; width: 100%;" 
+                loading = "lazy"
+                alt="Illustration."
+            >
+
+            <img src="../img/work/rtr-vertical-374.jpg" 
+                class="showTabletS"
+                style="width: 187px;" 
+                loading = "lazy"
+                alt="Illustration."
+            >
+
+            <p 
+                class=""
+                style="
+                    position: absolute;
+                    bottom: 16px;
+                    right: 16px;
+                "
+            >
+                Steam capsule and logo for Roll To Riches.                       
+            </p>
+        </div>
+
+        <!-- GOM cover -->
+        <div class="img-frame black">
+            <img src="../img/work/com-banner.jpg" 
+                    class=""
+                    style="width: 276px;" 
+                    alt="Illustration."
+            >
+
+            <p 
+            class=""
+            style="
+                position: absolute;
+                bottom: 16px;
+                right: 16px;
+            "
+        >
+            Itch.io cover for Chains Of Morr.                    
+        </p>
+        </div>
+    </div>
+
+    <!-- Modal -->
         <div id="modal" class="hide" onclick="modal()">
             <div class="container">
 
@@ -82,271 +219,6 @@
 
             </div>
         </div>
-
-        <!-- CONTENT -->
-        <!-- keep extra container for nav position -->
-        <div id="gallery" class="content-area">
-
-            <div class="img-frame" style="gap: 72px;">
-                <img src="../img/work/esc-1280.jpg"
-                        class=""
-                        style="
-                        max-width: 540px; width: 100%;
-                        box-shadow: 0px 4px 8px rgba(0,0,0,0.14);
-                    " 
-                        alt="Illustration of two sci-fi characters in an urban environment.">
-                
-                <div class="card-group tabletLargeHide">
-                    <div class="cardContainer" 
-                            style="
-                            background-image: url(../img/work/card-frame-jester.svg);
-                            z-index: 3;
-                            left: 8px;
-                            top: 88px;
-                        "
-                    >
-                        <img src="../img/work/jester.jpg" alt="Image of a card.">
-                    </div>
-
-                    <div class="cardContainer" 
-                            style="
-                            background-image: url(../img/work/card-frame-wizard.svg);
-                            z-index: 3;
-                            right: -8px;
-                            bottom: 88px;
-                        "
-                    >
-                        <img src="../img/work/wizard.jpg" alt="Image of a card.">
-                    </div>
-
-                    <p 
-                        class="tabletLargeHide"
-                        style="max-width: 360px; position: absolute; bottom: -12px; text-align: center; font-style: italic;"
-                    >
-                        Hi! I draw cards, assets, logos &amp all kinds of stuff for games.                        
-                    </p>
-                </div>
-            </div>
-            
-            <!-- Nether -->
-            <div class="img-frame">
-                <img src="../img/work/env-3.jpg" 
-                    class="tabletLargeHide"
-                    style="width: 275px;" 
-                    alt="Illustration.">
-                
-                <!-- <img src="../img/work/shrom.jpg" 
-                    class="tabletLargeHide"
-                    style="width: 100px; transform: translate(0px, -85px);" 
-                    alt="Illustration."> -->
-
-                <img src="../img/work/nether-1280.jpg" 
-                    style="
-                        max-width: 800px; width: 100%;
-                        transform: rotate(0deg);" 
-                    loading = "lazy"
-                    alt="Illustration.">
-            </div>
-
-            <!-- Roll to riches -->
-            <div class="img-frame">
-                <img src="../img/work/riches-full.jpg" 
-                    
-                    style="max-width: 800px; width: 100%;" 
-                    loading = "lazy"
-                    alt="Illustration.">
-
-                    <div style="display: flex; flex-direction: column; gap: 24px;" class="tabletLargeHide">
-
-                        <img src="../img/work/roll-vertical-374.jpg" 
-                            class="tabletLargeHide"
-                            style="
-                                width: 187px;
-                            " 
-                            loading = "lazy"
-                            alt="Illustration.">
-
-                        <img src="../img/work/roll-small-231.jpg" 
-                            class="tabletLargeHide"
-                            style="
-                                width: 115px;
-                            " 
-                            loading = "lazy"
-                            alt="Illustration.">
-                    </div>
-            </div>
-
-            <!-- Chains -->
-            <div class="img-frame" style="gap: 48px;">
-                <img src="../img/work/chains-800.jpg" 
-                    style="max-width: 720px; width: 100%;" 
-                    loading = "lazy"
-                    alt="Illustration.">
-
-                <img src="../img/work/axe.jpg" 
-                    class="tabletLargeHide"
-                    style="width: 75px; transform: rotate(-14deg) translate(-22px, 82px); z-index: -1;" 
-                    alt="Illustration.">
-
-                <img src="../img/work/chain-banner.jpg" 
-                    class="tabletLargeHide"
-                    style="width: 276px;" 
-                    alt="Illustration.">
-            </div>
-
-            <!-- Scribe -->
-            <div class="img-frame">
-                <img src="../img/work/env-2.jpg" 
-                    class="tabletLargeHide"
-                    style="width: 275px;" 
-                    alt="Illustration.">
-
-                <img src="../img/work/char-1.jpg" 
-                    class="tabletLargeHide"
-                    style="width: 75px;" 
-                    alt="Illustration.">
-
-                <div 
-                    style="
-                        position: relative;
-                        padding: 24px 44px 12px 44px;
-                        background-color: rgb(48,49,60);
-                        height: min-content;
-                    "
-                >
-
-                    <img src="../img/work/scribe-logo-248.png" 
-                        alt="Subpar scribe logotype." 
-                        class="tabletLargeHide"
-                        style="width: 248px;
-                            position: absolute;
-                            top: 0;
-                            left: calc(50% - 124px);
-                        ">
-                    <img src="../img/work/scribe-800.jpg" 
-                        style="max-width: 720px; width: 100%;" 
-                        loading = "lazy" 
-                        alt="Illustration.">
-                </div>
-                
-            </div>
-
-            <!-- Cards -->
-            <div 
-                class="img-frame tabletLargeHide" 
-                style="flex-wrap: wrap; max-width: 860px;"
-            >
-
-                <div class="cardContainer" 
-                    style="
-                        background-image: url(../img/work/card-frame-wall.svg);
-                    
-                    ">
-                    <img src="../img/work/wall.jpg" alt="Image of a card.">
-                </div>
-
-                <div class="cardContainer" 
-                    style="
-                        background-image: url(../img/work/card-frame-ghost.svg);
-                        
-                    ">
-                    <img src="../img/work/ghost.jpg" alt="Image of a card.">
-                </div>
-                
-                <div class="cardContainer" 
-                    style="
-                        background-image: url(../img/work/card-frame-wolf.svg);
-                        
-                    ">
-                    <img src="../img/work/wolf.jpg" alt="Image of a card.">
-                </div>
-
-                <div class="cardContainer" 
-
-                    style="
-                        background-image: url(../img/work/card-frame-farm.svg);
-                        
-                    ">
-                    <img src="../img/work/farm.jpg" alt="Image of a card.">
-                </div>
-                
-                <div class="cardContainer" 
-                    style="
-                        background-image: url(../img/work/card-frame-bear.svg);
-                        
-                    ">
-                    <img src="../img/work/bear.jpg" alt="Image of a card.">
-                </div>
-            </div>
-
-            <!-- Rot -->
-            <div class="img-frame">
-                <img src="../img/work/rot.jpg" 
-                style="
-                    max-width: 800px; width: 100%;
-                " 
-                loading = "lazy"
-                alt="Illustration of various characters.">
-            </div>
-
-            <!-- Sketches -->
-            <div class="img-frame tabletLargeHide" 
-                style="
-                    
-                    flex-direction: column;
-                    gap: 100px;
-                "
-                
-            >
-                <p style="max-width: 400px; text-align: center;">
-                    I do everything by hand, large illustrations take ~40 hours to complete.
-                </p>
-
-                <!-- <p>***</p> -->
-
-                <div style="display: flex;">
-                    <img src="../img/work/sketch-1.jpg" 
-                            class="border"
-                            style="width: 340px; transform: translate(77px, -32px); z-index: -1;" 
-                            alt="Illustration.">
-    
-                    <img src="../img/work/sketch-2.jpg"
-                            class="border"
-                            style="width: 340px;" 
-                            alt="Illustration.">
-    
-                    <img src="../img/work/sketch-3.jpg" 
-                            class="border"
-                            style="width: 340px; transform: translate(-77px, 32px);" 
-                            alt="Illustration.">
-                </div>
-
-                <p style="transform: rotate(180deg);">***</p>
-            </div>
-
-            
-            <!-- Characters -->
-            <div class="img-frame">
-                <img src="../img/work/chars.jpg" 
-                style="
-                    max-width: 800px; width: 100%;
-                " 
-                loading = "lazy"
-                alt="Illustration of various characters.">
-            </div>
-
-            <!-- Items -->
-            <div class="img-frame">
-                <img src="../img/work/items.jpg" 
-                style="
-                    max-width: 1000px; width: 100%;
-                " 
-                loading = "lazy"
-                alt="Illustration of various items.">
-            </div>
-        </div>
-        
-    </div>
 
     <footer id="footer" class="breakpoints"></footer>
 

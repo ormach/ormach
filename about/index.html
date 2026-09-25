@@ -61,134 +61,126 @@
     <nav id="desktop-nav"></nav>
     <nav id="mobile-nav" class=""></nav>
 
-    <div class="wrapper" style="overflow-x: hidden;">
-        <!-- CONTENT -->
-        <!-- keep extra container for nav position -->
-        <div class="content-container">
-            <div class="content-area about-container">
-
-
+    <!-- CONTENT -->
+    <div class="wrapper breakpoints nav-padding column" style="overflow-x: hidden; gap:96px;">
+        
+        <!-- Photos -->
+        <div class="bio" >             
+            <p id="about">
+                Hi! My name is Pavel, I am a game illustrator &amp; designer from Latvia. 
                 
-                
-                <!-- Photos -->
-                <div class="bio" >             
-                    <p id="about">
-                        Hi! My name is Pavel, I am a game illustrator &amp; designer from Latvia. 
-                        
-                        <br><br>
+                <br><br>
 
-                        For the last ten years I was involved in many cool projects. I made ORMACH to unify all my work &amp; art projects under one name. 
-    
-                        <br><br>
-                        <span style="color: var(--b20);">***</span>
-                        <br><br>
-    
-                        Interested in working together? <br>
-                        I'd love to hear from you!<br>
-                        Say hi at pav.ormach@gmail.com
-    
-                    </p>
+                For the last ten years I was involved in many cool projects. I made ORMACH to unify all my work &amp; art projects under one name. 
 
-                    <div class="photo-container" 
-                        style="
-                            width: 100%;
-                            max-width: 540px;
-                            height: 540px; 
+                <br><br>
+                <span style="color: var(--b20);">***</span>
+                <br><br>
 
-                            display: flex; 
-                            flex-direction: column; 
-                            flex-wrap: wrap;
-                            justify-content: space-between;
-                            gap: 12px;
-                    ">
-                        <img src="../img/photo/pav2.jpg"     alt="Photo of Pavel" style="border-radius: 999px 999px 0 0; width: 260px; height: 540px;">
-                        <img src="../img/photo/bike-sea.jpg" class="tabletLargeHide" alt="Photo of my bike, a 1993 Gian Escaper." style="border-radius: 999px 999px 0 0; width: 260px; height: 260px;">
-                        <img src="../img/photo/table.jpg"    class="tabletLargeHide" alt="Photo of my work table." style="border-radius: 999px 999px 0 0; width: 260px; height: 260px;">
+                Interested in working together? <br>
+                I'd love to hear from you!<br>
+                Say hi at pav.ormach@gmail.com
+
+            </p>
+
+            <div class="photo-container" 
+                style="
+                    width: 100%;
+                    max-width: 540px;
+                    height: 540px; 
+
+                    display: flex; 
+                    flex-direction: column; 
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    gap: 12px;
+            ">
+                <img src="../img/photo/pav2.jpg"     alt="Photo of Pavel" style="border-radius: 999px 999px 0 0; width: 260px; height: 540px;">
+                <img src="../img/photo/bike-sea.jpg" class="hideTabletL" alt="Photo of my bike, a 1993 Gian Escaper." style="border-radius: 999px 999px 0 0; width: 260px; height: 260px;">
+                <img src="../img/photo/table.jpg"    class="hideTabletL" alt="Photo of my work table." style="border-radius: 999px 999px 0 0; width: 260px; height: 260px;">
+            </div>
+
+        </div>
+
+
+        <!-- Company logos -->
+        <section>
+
+            <h3>I worked with:</h3>
+
+            <div class="company-container">
+
+                <div class="row" style="gap: 2px;">
+
+                    <div class="logo-cell">
+                        <img src="../img/logo/jetbrains.png" alt="JetBrains logo" style="width: 260px;">
+                        <p class="date">2025</p>
+                    </div>
+
+                    <div class="logo-cell">
+                        <img src="../img/logo/techlab.png" alt="Techlab logo" style="width: 260px;">
+                        <p class="date">2022</p>
                     </div>
 
                 </div>
 
-
-                <!-- Company logos -->
-                <section>
-
-                    <h3>I worked with:</h3>
-
-                    <div class="company-container">
-
-                        <div class="row" style="gap: 2px;">
-
-                            <div class="logo-cell">
-                                <img src="../img/logo/jetbrains.png" alt="JetBrains logo" style="width: 260px;">
-                                <p class="date">2025</p>
-                            </div>
-    
-                            <div class="logo-cell">
-                                <img src="../img/logo/techlab.png" alt="Techlab logo" style="width: 260px;">
-                                <p class="date">2022</p>
-                            </div>
-
-                        </div>
-
-                        <div class="row" style="gap: 2px;">
-                            <div class="logo-cell sm">
-                                <img src="../img/logo/shireburn.png" alt="Shireburn logo" style="width: 124px;">
-                                <p class="date">2020</p>
-                            </div>
-    
-                            <div class="logo-cell sm">
-                                <img src="../img/logo/lightsource.png" alt="Lightsource logo" style="width: 200px;">
-                                <p class="date">2017</p>
-                            </div>
-    
-                            <div class="logo-cell sm">
-                                <img src="../img/logo/lido.png" alt="Lido logo" style="width: 157px;">
-                                <p class="date">2014</p>
-                            </div>
-                        </div>
-                    
-                    </div>
-                </section>
-
-
-                <!-- What we do -->
-                <section>
-                    <h3>Things I do:</h3>
-
-                    <div class="skills-container">
-                        <div class="tag">Illustration</div>
-                        <div class="tag">2D game assets</div>
-                        <div class="tag">Game design</div>
-                        <div class="tag">Graphic design</div>
-                        <div class="tag">Branding</div>
-                        <div class="tag">Low-poly 3D game assets</div>
-                        <div class="tag">UX/UI design</div>
-                        <div class="tag">Usability testing</div>
-                        <div class="tag">Basic web dev</div>
+                <div class="row" style="gap: 2px;">
+                    <div class="logo-cell sm">
+                        <img src="../img/logo/shireburn.png" alt="Shireburn logo" style="width: 124px;">
+                        <p class="date">2020</p>
                     </div>
 
-                </section>
+                    <div class="logo-cell sm">
+                        <img src="../img/logo/lightsource.png" alt="Lightsource logo" style="width: 200px;">
+                        <p class="date">2017</p>
+                    </div>
 
-                
-                <!-- Links -->
-                <section>
-                    <h3>Links:</h3>
-                    <a class="link-btn" target="_blank" href="https://www.reddit.com/user/ormach/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button">
-                        <img src="../img/ico/id=reddit,%20variant=3.svg" alt="">
-                        Reddit: u/ormach
-                    </a>
-                    <a class="link-btn" target="_blank" href="https://discord.gg/qbWS6g5vam">
-                        <img src="../img/ico/id=discord-2,%20variant=3.svg" alt="">
-                        Discord server
-                    </a>
-                    <a class="link-btn" target="_blank" href="https://www.instagram.com/pav.ormach/">
-                        <img src="../img/ico/id=book,%20variant=3.svg" alt="">
-                        Instagram: pav.ormach
-                    </a>
-                </section>
-
+                    <div class="logo-cell sm">
+                        <img src="../img/logo/lido.png" alt="Lido logo" style="width: 157px;">
+                        <p class="date">2014</p>
+                    </div>
+                </div>
+            
             </div>
-        </div>
+        </section>
+
+
+        <!-- What we do -->
+        <section>
+            <h3>Things I do:</h3>
+
+            <div class="skills-container">
+                <div class="tag">Illustration</div>
+                <div class="tag">2D game assets</div>
+                <div class="tag">Game design</div>
+                <div class="tag">Graphic design</div>
+                <div class="tag">Branding</div>
+                <div class="tag">Low-poly 3D game assets</div>
+                <div class="tag">UX/UI design</div>
+                <div class="tag">Usability testing</div>
+                <div class="tag">Basic web dev</div>
+            </div>
+
+        </section>
+
+        
+        <!-- Links -->
+        <section>
+            <h3>Links:</h3>
+            <a class="link-btn" target="_blank" href="https://www.reddit.com/user/ormach/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button">
+                <img src="../img/ico/id=reddit,%20variant=3.svg" alt="">
+                Reddit: u/ormach
+            </a>
+            <a class="link-btn" target="_blank" href="https://discord.gg/qbWS6g5vam">
+                <img src="../img/ico/id=discord-2,%20variant=3.svg" alt="">
+                Discord server
+            </a>
+            <a class="link-btn" target="_blank" href="https://www.instagram.com/pav.ormach/">
+                <img src="../img/ico/id=book,%20variant=3.svg" alt="">
+                Instagram: pav.ormach
+            </a>
+        </section>
+
     </div>
 
     <footer id="footer" class="breakpoints"></footer>
