@@ -42,6 +42,9 @@ function generateNav(){
                 <a class="link-btn" href="../projects">
                     Projects
                 </a>
+                <a class="link-btn" href="../assets">
+                    Assets
+                </a>
                 <a class="link-btn" href="../about">
                     About
                 </a>
@@ -74,6 +77,11 @@ function generateNav(){
             <a class="link-btn" href="../projects">
                 <img src="../img/ico/black/repair.svg">
                 Project list
+            </a>
+
+            <a class="link-btn" href="../assets">
+                <img src="../img/ico/black/repair.svg">
+                2D game assets
             </a>
 
             <a class="link-btn" href="../about">
@@ -122,7 +130,16 @@ function generateFooter(type){
             </p>
     
             <div class="footerButtonContainer">
-                <a class="link-btn btn-2" href="../about">Learn more about ORMACH -></a>
+                <a class="link-btn btn-2" href="../about">
+                    <img src="../img/ico/black/discord.svg">
+                    Join my Discord
+                </a>
+
+                <a class="link-btn btn-2" href="../about">
+                    <img src="../img/ico/black/view.svg">
+                    Learn more about ORMACH
+                </a>
+                
             </div>
             
             <div class="footerBackground"></div>
