@@ -126,11 +126,11 @@ function generateFooter(type){
     
             <p>
                 If you have any questions, send me a note to pav.ormach@gmail.com 
-                or find me on <a href="https://discord.gg/qbWS6g5vam" target="_blank">Discord</a>. Let's make your game better! 
+                or find me on Discord. Let's make your game better! 
             </p>
     
             <div class="footerButtonContainer">
-                <a class="link-btn btn-2" href="../about">
+                <a class="link-btn btn-2" href="https://discord.gg/qbWS6g5vam" target="_blank">
                     <img src="../img/ico/black/discord.svg">
                     Join my Discord
                 </a>
