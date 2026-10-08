@@ -135,7 +135,7 @@ function generateFooter(type){
                     Join my Discord
                 </a>
 
-                <a class="link-btn btn-2" href="../about">
+                <a class="link-btn btn-2 hideMobileL" href="../about">
                     <img src="../img/ico/black/view.svg">
                     Learn more about ORMACH
                 </a>

@@ -925,6 +925,8 @@
 }
 /* Mobile L */
 @media (max-width: 616px) {
+    .hideMobileL{display: none;}
+
     .breakpoints{
         max-width: 424px;
     }
@@ -984,6 +986,17 @@
             display: none;
         }
     }
+
+    .asset-card{
+        gap: 16px;
+        padding: 0 0 32px 0;
+        border: none;
+
+        .content{
+            gap: 16px;
+        }
+    }
+
 }
 /* Mobile S */
 @media (max-width: 472px) {
@@ -991,5 +1004,6 @@
         max-width: 312px;
     }
 
-    
+    .hideMobileS{display: none;}
+
 }
