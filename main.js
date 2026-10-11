@@ -39,6 +39,9 @@ function generateNav(){
                 <a class="link-btn" href="/index.html">
                     Gallery
                 </a>
+                <a class="link-btn" href="../games">
+                    Games
+                </a>
                 <a class="link-btn" href="../projects">
                     Projects
                 </a>
@@ -72,6 +75,11 @@ function generateNav(){
             <a class="link-btn" href="/index.html">
                 <img src="../img/ico/black/view.svg">
                 Gallery
+            </a>
+
+            <a class="link-btn" href="../games">
+                <img src="../img/ico/black/repair.svg">
+                Games
             </a>
 
             <a class="link-btn" href="../projects">
