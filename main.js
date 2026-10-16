@@ -48,12 +48,11 @@ function generateNav(){
                 <a class="link-btn" href="../about">
                     About
                 </a>
-                <a class="link-btn" target="_blank" href="https://discord.gg/qbWS6g5vam">
-                    Discord
+                <a class="link-btn"  target="_blank" href="https://discord.gg/qbWS6g5vam">
+                    <img src="../img/ico/black/discord.svg">
                 </a>
             </div>
-
-            <p id="email">pav.ormach@gmail.com</p>
+                
         </div>
     ` 
 
